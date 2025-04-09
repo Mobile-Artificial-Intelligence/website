@@ -21,7 +21,7 @@ function Topbar() {
 
     return (
         <header style={styles.header}>
-            <div style={styles.logoGroup}>
+            <div className='logoGroup'>
                 <img src="/maid.svg" alt="logo" className="logo" />
                 <h1>Mobile Artificial Intelligence</h1>
             </div>
