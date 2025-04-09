@@ -1,4 +1,4 @@
-import React from 'react';
+import './Topbar.css';
 
 function Topbar() {
     const styles = {
@@ -22,8 +22,8 @@ function Topbar() {
     return (
         <header style={styles.header}>
             <div style={styles.logoGroup}>
-                <img src="/maid.svg" alt="Maid Logo" width="40px" />
-                <h1>Maid</h1>
+                <img src="/maid.svg" alt="logo" className="logo" />
+                <h1>Mobile Artificial Intelligence</h1>
             </div>
         </header>
     )
