@@ -7,23 +7,23 @@ header {
   height: 50px;
 }
 
-.logoGroup {
+.logo-group {
   display: flex;
   align-items: center;
   gap: 1em;
 }
 
-.logoGroup h1 {
+.logo-group h1 {
   font-family: 'Space Mono', monospace;
   font-size: 1.5rem;
   margin: 0;
 }
-.logoGroup img {
+.logo-group img {
   height: 2em;
   will-change: filter;
   transition: filter 300ms;
 }
-.logoGroup img:hover {
+.logo-group img:hover {
   filter: drop-shadow(0 0 1em #00e1ff);
 }
 
@@ -45,13 +45,13 @@ h1 .short {
   }
 }
 
-.linkGroup {
+.link-group {
   padding-right: 10px;
   display: flex;
   gap: 1em;
 }
 
-.linkGroup a {
+.link-group a {
   position: relative;
   color: white;
   text-decoration: none;
@@ -60,7 +60,7 @@ h1 .short {
   overflow: hidden;
 }
 
-.linkGroup a::after {
+.link-group a::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -74,17 +74,17 @@ h1 .short {
   pointer-events: none;
 }
 
-.linkGroup a:hover {
+.link-group a:hover {
   filter: drop-shadow(0 0 1em #00e1ff);
 }
 
-.linkGroup a:hover::after {
+.link-group a:hover::after {
   transform: scaleX(1);
   transform-origin: left;
   transition: transform 0.3s ease;
 }
 
-.linkGroup a:not(:hover)::after {
+.link-group a:not(:hover)::after {
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 0.3s ease;
