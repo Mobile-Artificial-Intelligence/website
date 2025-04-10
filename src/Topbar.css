@@ -27,6 +27,24 @@ header {
   filter: drop-shadow(0 0 1em #00e1ff);
 }
 
+/* Show full title by default */
+h1 .full {
+  display: inline;
+}
+h1 .short {
+  display: none;
+}
+
+/* On small screens, swap them */
+@media (max-width: 600px) {
+  h1 .full {
+    display: none;
+  }
+  h1 .short {
+    display: inline;
+  }
+}
+
 .linkGroup {
   padding-right: 10px;
   display: flex;
