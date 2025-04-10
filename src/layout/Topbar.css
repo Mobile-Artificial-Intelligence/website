@@ -17,11 +17,12 @@ header {
   font-family: 'Space Mono', monospace;
   font-size: 1.5rem;
   margin: 0;
+  transition: font-size 0.6s ease;
 }
 .logo-group img {
   height: 2em;
   will-change: filter;
-  transition: filter 300ms;
+  transition: filter 300ms, height 0.6s ease;
 }
 .logo-group img:hover {
   filter: drop-shadow(0 0 1em #00e1ff);
@@ -55,9 +56,24 @@ h1 .short {
   position: relative;
   color: white;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   transition: all 300ms;
   overflow: hidden;
+  transition: font-size 0.6s ease;
+}
+
+@media (max-width: 768px) {
+  .logo-group img {
+    height: 1.5em;
+  }
+
+  .logo-group h1 {
+    font-size: 1rem;
+  }
+
+  .link-group a {
+    font-size: 1rem;
+  }
 }
 
 .link-group a::after {
