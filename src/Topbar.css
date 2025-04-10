@@ -39,7 +39,9 @@ header {
   text-decoration: none;
   font-size: 1.5rem;
   transition: all 300ms;
+  overflow: hidden;
 }
+
 .linkGroup a::after {
   content: '';
   position: absolute;
@@ -50,11 +52,22 @@ header {
   background: #00e1ff;
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, transform-origin 0s ease 0.3s;
+  pointer-events: none;
 }
+
 .linkGroup a:hover {
   filter: drop-shadow(0 0 1em #00e1ff);
 }
+
 .linkGroup a:hover::after {
   transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.linkGroup a:not(:hover)::after {
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
 }
