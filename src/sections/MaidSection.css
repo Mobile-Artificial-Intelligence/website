@@ -1,0 +1,39 @@
+#maid-section {
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: padding 0.6s ease;
+}
+
+#maid-section h1, 
+#maid-section p {
+    transition: font-size 0.6s ease;
+}
+
+#maid-section h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    text-align: left;
+}
+
+#maid-section p {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.8rem;
+    margin: 0.5rem 0;
+    text-align: left;
+}
+
+@media (min-width: 768px) {
+    #maid-section {
+        padding: 0 10%;
+    }
+
+    #maid-section h1 {
+        font-size: 1.75rem;
+    }
+
+    #maid-section p {
+        font-size: 1rem;
+    }
+}
