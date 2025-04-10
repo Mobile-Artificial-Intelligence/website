@@ -9,8 +9,8 @@ function Topbar() {
                     <img src="/logo.svg" alt="logo" />
                 </Link>
                 <h1>
-                  <span className="full">Mobile Artificial Intelligence</span>
-                  <span className="short">Mobile AI</span>
+                  <span id="title-full">Mobile Artificial Intelligence</span>
+                  <span id="title-short">Mobile AI</span>
                 </h1>
             </div>
             <div id='link-group'>

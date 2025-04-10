@@ -29,19 +29,19 @@ header {
 }
 
 /* Show full title by default */
-h1 .full {
+h1 #title-full {
   display: inline;
 }
-h1 .short {
+h1 #title-short {
   display: none;
 }
 
 /* On small screens, swap them */
 @media (max-width: 600px) {
-  h1 .full {
+  h1 #title-full {
     display: none;
   }
-  h1 .short {
+  h1 #title-short {
     display: inline;
   }
 }
