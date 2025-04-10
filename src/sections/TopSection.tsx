@@ -1,6 +1,6 @@
-import './MainSection.css';
+import './TopSection.css';
 
-function MainSection() {
+function TopSection() {
     return (
         <section className="main-section">
             <h1>Mobile + AI</h1>
@@ -10,4 +10,4 @@ function MainSection() {
     );
 }
 
-export default MainSection;
+export default TopSection;

@@ -1,11 +1,11 @@
-import MainSection from './MainSection'
-import Topbar from './Topbar'
+import TopSection from './sections/TopSection'
+import Topbar from './layout/Topbar'
 
 function App() {
   return (
     <div>
       <Topbar />
-      <MainSection />
+      <TopSection />
     </div>
   )
 }
