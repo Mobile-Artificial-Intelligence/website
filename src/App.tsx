@@ -1,11 +1,11 @@
-import TopSection from './sections/TopSection'
+import TitleSection from './sections/TitleSection'
 import Topbar from './layout/Topbar'
 
 function App() {
   return (
     <div>
       <Topbar />
-      <TopSection />
+      <TitleSection />
     </div>
   )
 }

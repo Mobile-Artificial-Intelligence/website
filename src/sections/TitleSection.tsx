@@ -1,8 +1,8 @@
-import './TopSection.css';
+import './TitleSection.css';
 
-function TopSection() {
+function TitleSection() {
     return (
-        <section className="main-section">
+        <section className="title-section">
             <h1>Mobile + AI</h1>
             <h2>Artificial Intelligence on the edge</h2>
             <h2>Brisbane, Australia</h2>
@@ -10,4 +10,4 @@ function TopSection() {
     );
 }
 
-export default TopSection;
+export default TitleSection;
