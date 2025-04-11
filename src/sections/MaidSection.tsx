@@ -17,6 +17,13 @@ function MaidSection() {
                 </p>
             </div>
             <div id="maid-links">
+                <a href='https://play.google.com/store/apps/details?id=com.danemadsen.maid&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+                  <img 
+                    src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'
+                    alt='Get it on Google Play'
+                    height="80"
+                  />
+                </a>
                 <a href="https://f-droid.org/packages/com.danemadsen.maid/">
                   <img 
                     src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
@@ -43,13 +50,6 @@ function MaidSection() {
                     src="https://raw.githubusercontent.com/NeoApplications/Neo-Backup/refs/heads/main/badge_github.png"
                     alt="Get it on GitHub"
                     width="210" 
-                  />
-                </a>
-                <a href='https://play.google.com/store/apps/details?id=com.danemadsen.maid&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
-                  <img 
-                    src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'
-                    alt='Get it on Google Play'
-                    height="80"
                   />
                 </a>
             </div>

@@ -22,6 +22,10 @@
     text-align: left;
 }
 
+.maid-text h1:hover {
+    filter: drop-shadow(0 0 1em #00e1ff);
+}
+
 .maid-text h2 {
     font-size: 1.3rem;
     margin: 0;
@@ -56,6 +60,10 @@
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+#maid-links a:hover {
+    filter: drop-shadow(0 0 3em #00e1ff);
 }
 
 #maid-lists {
