@@ -53,6 +53,25 @@ function MaidSection() {
                   />
                 </a>
             </div>
+            <div className="maid-text">
+                <h2>First of its kind</h2>
+                <p>
+                    In development since 2022, Maid is the first project to allow users to conveniently chat with 
+                    large language models locally on their mobile devices without a internet connection. 
+                </p>
+                <h2>Broad Support</h2>
+                <p>
+                    Maid supports a wide range of AI models and ecosystems, including Llama.cpp, Ollama, OpenAI, 
+                    Mistral, Anthropic, and Google Gemini. This allows users to choose the model that best fits 
+                    their needs and preferences.
+                </p>
+                <h2>Cross-Platform</h2>
+                <p>
+                    Maid is designed to be cross-platform, with support for Android, Windows, Linux, MacOS, and
+                    Web. This means that users can access the app on their preferred device, whether it's a
+                    smartphone, tablet, or computer.
+                </p>
+            </div>
             <div id="maid-lists">
                 <div className="maid-text">
                     <h2>Supported Ecosystems</h2>
