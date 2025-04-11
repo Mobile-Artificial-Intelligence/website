@@ -30,7 +30,7 @@
 #maid-carousel {
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    gap: 0.5rem;
     overflow-x: auto;
     overflow-y: hidden;
     padding: 1rem 0;
@@ -39,7 +39,7 @@
 }
 
 #maid-carousel img {
-    max-width: 200px;
+    max-width: 150px;
     height: auto;
     border-radius: 8px;
     flex-shrink: 0;
@@ -61,6 +61,12 @@
     }
 
     #maid-carousel img {
-        max-width: 400px;
+        max-width: 225px;
+    }
+}
+
+@media (min-width: 1536px) {
+    #maid-carousel img {
+        max-width: 300px;
     }
 }
