@@ -74,33 +74,6 @@
     justify-content: space-between;
 }
 
-#maid-carousel {
-    display: flex;
-    flex-direction: row;
-    gap: 0.5rem;
-    overflow-x: auto;
-    overflow-y: hidden;
-    padding: 1rem 0;
-    scrollbar-width: none;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-}
-
-#maid-carousel::-webkit-scrollbar {
-    display: none;
-}
-
-#maid-carousel img {
-    max-width: 150px;
-    height: auto;
-    border-radius: 8px;
-    flex-shrink: 0;
-    scroll-snap-align: start;
-    pointer-events: none;
-    user-select: none;
-    transition: max-width 0.6s ease;
-}
-
 @media (min-width: 768px) {
     .maid-text {
         padding: 0 10%;
@@ -120,15 +93,5 @@
 
     .maid-text ul li {
         font-size: 1.2rem;
-    }
-
-    #maid-carousel img {
-        max-width: 225px;
-    }
-}
-
-@media (min-width: 1536px) {
-    #maid-carousel img {
-        max-width: 300px;
     }
 }

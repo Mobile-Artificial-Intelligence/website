@@ -1,3 +1,4 @@
+import MaidCarousel from '../components/MaidCarousel';
 import './MaidSection.css';
 
 function MaidSection() {
@@ -87,15 +88,7 @@ function MaidSection() {
                     </ul>
                 </div>
             </div>
-            <div id="maid-carousel">
-                <img src="/maid/1.png" alt="maid screen 1" />
-                <img src="/maid/2.png" alt="maid screen 2" />
-                <img src="/maid/3.png" alt="maid screen 3" />
-                <img src="/maid/4.png" alt="maid screen 4" />
-                <img src="/maid/5.png" alt="maid screen 5" />
-                <img src="/maid/6.png" alt="maid screen 6" />
-                <img src="/maid/7.png" alt="maid screen 7" />
-            </div>
+            <MaidCarousel />
         </section>
     );
 }

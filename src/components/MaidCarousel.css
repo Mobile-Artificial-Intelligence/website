@@ -1,0 +1,52 @@
+#maid-carousel {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 1rem 0;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    cursor: grab;
+    cursor: -webkit-grab;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-y;
+}
+
+#maid-carousel.dragging {
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+}
+
+#maid-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+#maid-carousel img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    pointer-events: none;
+    user-select: none;
+    transition: transform 0.3s ease; /* better than max-width for perf */
+}
+
+#maid-carousel img:hover {
+    transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+    #maid-carousel img {
+        max-width: 225px;
+    }
+}
+
+@media (min-width: 1536px) {
+    #maid-carousel img {
+        max-width: 300px;
+    }
+}
