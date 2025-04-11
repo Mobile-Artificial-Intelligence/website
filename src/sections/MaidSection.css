@@ -27,6 +27,14 @@
     text-align: left;
 }
 
+#maid-links {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 #maid-carousel {
     display: flex;
     flex-direction: row;
