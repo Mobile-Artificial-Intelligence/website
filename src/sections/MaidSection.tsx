@@ -3,7 +3,7 @@ import './MaidSection.css';
 function MaidSection() {
     return (
         <section id="maid-section">
-            <div id="maid-text">
+            <div className="maid-text">
                 <h1>Mobile Artificial Intelligence Distribution</h1>
                 <p>
                     The Mobile Artifical Intelligence Distribution (MAID) project is a research initiative 
@@ -52,6 +52,29 @@ function MaidSection() {
                     height="80"
                   />
                 </a>
+            </div>
+            <div id="maid-lists">
+                <div className="maid-text">
+                    <h2>Supported Ecosystems</h2>
+                    <ul>
+                        <li>Llama.cpp</li>
+                        <li>Ollama</li>
+                        <li>OpenAI</li>
+                        <li>Mistral</li>
+                        <li>Anthropic</li>
+                        <li>Google Gemini</li>
+                    </ul>
+                </div>
+                <div className="maid-text">
+                    <h2>Supported Platforms</h2>
+                    <ul>
+                        <li>Android</li>
+                        <li>Windows</li>
+                        <li>Linux</li>
+                        <li>MacOS</li>
+                        <li>Web</li>
+                    </ul>
+                </div>
             </div>
             <div id="maid-carousel">
                 <img src="/maid/1.png" alt="maid screen 1" />
