@@ -1,4 +1,5 @@
 import MaidSection from "../sections/MaidSection";
+import SdkSection from "../sections/SdkSection";
 import TitleSection from "../sections/TitleSection";
 
 function MainPage() {
@@ -6,6 +7,7 @@ function MainPage() {
         <div>
             <TitleSection />
             <MaidSection />
+            <SdkSection />
         </div>
     );
 }
