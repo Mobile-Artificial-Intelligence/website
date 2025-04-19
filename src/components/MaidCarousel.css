@@ -39,6 +39,17 @@
     transform: scale(1.05);
 }
 
+#maid-carousel img.expanded {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(2.5);
+    z-index: 1000;
+    max-height: 40vh;
+    cursor: zoom-out;
+    pointer-events: auto;
+}
+
 @media (min-width: 768px) {
     #maid-carousel img {
         max-width: 225px;
