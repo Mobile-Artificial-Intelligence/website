@@ -74,7 +74,6 @@ function MaidSection() {
                         <li>OpenAI</li>
                         <li>Mistral</li>
                         <li>Anthropic</li>
-                        <li>Google Gemini</li>
                     </ul>
                 </div>
                 <div className="maid-text">
