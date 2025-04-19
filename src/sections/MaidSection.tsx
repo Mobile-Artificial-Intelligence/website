@@ -17,6 +17,42 @@ function MaidSection() {
                     personal data or privacy.
                 </p>
             </div>
+            <button id="try-maid-button" onClick={() => window.location.href = "https://maid-app.com"} >
+              Try Maid Online Now
+            </button>
+            <div className="maid-text">
+                <h2>First of its kind</h2>
+                <p>
+                    In development since 2022, Maid is the first project to allow users to conveniently chat with 
+                    large language models locally on their mobile devices without a internet connection. 
+                </p>
+                <p>
+                    Maid is also one of the only AI frontends with a broad support of all platforms. Whether you are
+                    using a mobile device, a desktop computer, or a web browser, Maid has you covered.
+                </p>
+            </div>
+            <div id="maid-lists">
+                <div className="maid-text">
+                    <h2>Supported Ecosystems</h2>
+                    <ul>
+                        <li>Llama.cpp</li>
+                        <li>Ollama</li>
+                        <li>OpenAI</li>
+                        <li>Mistral</li>
+                        <li>Anthropic</li>
+                    </ul>
+                </div>
+                <div className="maid-text">
+                    <h2>Supported Platforms</h2>
+                    <ul>
+                        <li>Android</li>
+                        <li>Windows</li>
+                        <li>Linux</li>
+                        <li>MacOS</li>
+                        <li>Web</li>
+                    </ul>
+                </div>
+            </div>
             <div id="maid-links">
                 <a href='https://play.google.com/store/apps/details?id=com.danemadsen.maid&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
                   <img 
@@ -53,39 +89,6 @@ function MaidSection() {
                     width="210" 
                   />
                 </a>
-            </div>
-            <div className="maid-text">
-                <h2>First of its kind</h2>
-                <p>
-                    In development since 2022, Maid is the first project to allow users to conveniently chat with 
-                    large language models locally on their mobile devices without a internet connection. 
-                </p>
-                <p>
-                    Maid is also one of the only AI frontends with a broad support of all platforms. Whether you are
-                    using a mobile device, a desktop computer, or a web browser, Maid has you covered.
-                </p>
-            </div>
-            <div id="maid-lists">
-                <div className="maid-text">
-                    <h2>Supported Ecosystems</h2>
-                    <ul>
-                        <li>Llama.cpp</li>
-                        <li>Ollama</li>
-                        <li>OpenAI</li>
-                        <li>Mistral</li>
-                        <li>Anthropic</li>
-                    </ul>
-                </div>
-                <div className="maid-text">
-                    <h2>Supported Platforms</h2>
-                    <ul>
-                        <li>Android</li>
-                        <li>Windows</li>
-                        <li>Linux</li>
-                        <li>MacOS</li>
-                        <li>Web</li>
-                    </ul>
-                </div>
             </div>
             <MaidCarousel />
         </section>

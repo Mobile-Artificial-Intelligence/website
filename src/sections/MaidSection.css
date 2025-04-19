@@ -57,6 +57,21 @@
     text-align: left;
 }
 
+#try-maid-button {
+    background-color: #ff00f2;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    padding: 1rem 2rem;
+    margin: 1rem auto;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#try-maid-button:hover {
+    filter: drop-shadow(0 0 4em #ff00f2);
+}
+
 #maid-links {
     display: flex;
     padding: 3rem 0;
