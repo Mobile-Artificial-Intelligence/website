@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import Link from "next/link";
+import { Geist, Space_Mono } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -7,8 +8,9 @@ const geistSans = Geist({
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const spaceMono = Space_Mono({
+  variable: "--font-space-mono",
+  weight: ["400", "700"],
   subsets: ["latin"],
 });
 
@@ -27,7 +29,22 @@ export default function RootLayout({
       <head>
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`${geistSans.variable} ${spaceMono.variable}`}>
+        <header>
+            <div id='logo-group'>
+                <Link href="/">
+                    <img src="/favicon.svg" alt="logo" />
+                </Link>
+                <h1>
+                  <span id="title-full">Mobile Artificial Intelligence</span>
+                  <span id="title-short">Mobile AI</span>
+                </h1>
+            </div>
+            <div id='link-group'>
+                <a href="https://github.com/orgs/Mobile-Artificial-Intelligence/repositories">Github</a>
+                <Link href="/privacy">Privacy Policy</Link>
+            </div>
+        </header>
         {children}
       </body>
     </html>
