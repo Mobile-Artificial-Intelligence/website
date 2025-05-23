@@ -5,7 +5,7 @@ function PrivacyPolicy() {
     <div id="privacy-policy" className="p-6 max-w-3xl mx-auto">
       <h1>Privacy Policy</h1>
       <p>
-        This privacy policy applies to the Mobile Artificial Intelligence Distribution app (hereby referred to as "Application") for mobile devices that was created by danemadsen (hereby referred to as "Service Provider") as an Open Source service. This service is intended for use "AS IS".
+        This privacy policy applies to the Mobile Artificial Intelligence Distribution app (hereby referred to as &#34;Application&#34;) for mobile devices that was created by danemadsen (hereby referred to as &#34;Service Provider&#34;) as an Open Source service. This service is intended for use &#34;AS IS&#34;.
       </p>
 
       <h2>Information Collection and Use</h2>
@@ -13,7 +13,7 @@ function PrivacyPolicy() {
         The Application collects information when you download and use it. This information may include details such as:
       </p>
       <ul>
-        <li>Your device's Internet Protocol address (e.g. IP address)</li>
+        <li>Your device&#39;s Internet Protocol address (e.g. IP address)</li>
         <li>The pages of the Application that you visit, the time and date of your visit, and the time spent on those pages</li>
         <li>The overall time spent on the Application</li>
         <li>The operating system you use on your mobile device</li>
@@ -22,7 +22,7 @@ function PrivacyPolicy() {
         The Application does not gather precise information about the location of your mobile device.
       </p>
       <p>
-        The Application collects your device's location to help the Service Provider determine your approximate geographical location and to use it in the following ways:
+        The Application collects your device&#39;s location to help the Service Provider determine your approximate geographical location and to use it in the following ways:
       </p>
       <ul>
         <li>
@@ -54,7 +54,7 @@ function PrivacyPolicy() {
           When the Service Provider believes in good faith that disclosure is necessary to protect their rights, your safety, or the safety of others, to investigate fraud, or to respond to a government request;
         </li>
         <li>
-          With trusted service providers who work on the Service Provider's behalf and have agreed to adhere to the rules set forth in this Privacy Policy without using the information for any other purpose.
+          With trusted service providers who work on the Service Provider&#39;s behalf and have agreed to adhere to the rules set forth in this Privacy Policy without using the information for any other purpose.
         </li>
       </ul>
 
