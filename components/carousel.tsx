@@ -84,6 +84,8 @@ export default function Carousel() {
       {Array.from({ length: 7 }, (_, i) => (
         <Image
           key={i}
+          width={225}
+          height={500}
           src={`/maid/${i + 1}.png`}
           alt={`maid screen ${i + 1}`}
           onClick={toggleImage}

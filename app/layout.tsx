@@ -34,7 +34,7 @@ export default function RootLayout({
         <header>
             <div id='logo-group'>
                 <Link href="/">
-                  <Image src="/favicon.svg" alt="logo" />
+                  <Image src="/favicon.svg" alt="logo" width={40} height={40} />
                 </Link>
                 <h1>
                   <span id="title-full">Mobile Artificial Intelligence</span>
