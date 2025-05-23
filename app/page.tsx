@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Carousel from "@/components/carousel";
 import TryMaidButton from "@/components/try-maid-button";
 import "./page.css";
@@ -59,36 +60,36 @@ export default function Home() {
               </div>
           </div>
           <div id="maid-links">
-              <a href='https://play.google.com/store/apps/details?id=com.danemadsen.maid&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
-                <img 
-                  src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'
-                  alt='Get it on Google Play'
+              <a href="https://play.google.com/store/apps/details?id=com.danemadsen.maid&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
+                <Image 
+                  src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                  alt="Get it on Google Play"
                   height="80"
                 />
               </a>
               <a href="https://f-droid.org/packages/com.danemadsen.maid/">
-                <img 
+                <Image 
                   src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
                   alt="Get it on F-Droid"
                   height="80"
                 />
               </a>
               <a href="https://www.openapk.net/maid/com.danemadsen.maid/">
-                <img 
+                <Image 
                   src="https://www.openapk.net/images/openapk-badge.png"
                   alt="Get it on OpenAPK"
                   height="80"
                 />
               </a>
               <a href="https://www.androidfreeware.net/download-maid-apk.html">
-                <img 
+                <Image 
                   src="https://www.androidfreeware.net/images/androidfreeware-badge.png"
                   alt="Get it on Android Freeware"
                   height="80"
                 />
               </a>
               <a href="https://github.com/Mobile-Artificial-Intelligence/maid/releases/latest">
-                <img
+                <Image
                   src="https://raw.githubusercontent.com/NeoApplications/Neo-Backup/refs/heads/main/badge_github.png"
                   alt="Get it on GitHub"
                   width="210" 
@@ -111,7 +112,7 @@ export default function Home() {
               modifications.
           </p>
           <p>Add `llama_sdk` to your flutter project now by running the following command in your flutter project root:</p>
-          <div className='code-box' ><code>flutter pub add llama_sdk</code></div>
+          <div className="code-box" ><code>flutter pub add llama_sdk</code></div>
       </section>
     </div>
   );

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { Geist, Space_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -33,7 +34,7 @@ export default function RootLayout({
         <header>
             <div id='logo-group'>
                 <Link href="/">
-                    <img src="/favicon.svg" alt="logo" />
+                  <Image src="/favicon.svg" alt="logo" />
                 </Link>
                 <h1>
                   <span id="title-full">Mobile Artificial Intelligence</span>

@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import styles from "./carousel.module.css";
+import Image from "next/image";
 
 export default function Carousel() {
   const carouselRef = useRef<HTMLDivElement | null>(null);
@@ -81,7 +82,7 @@ export default function Carousel() {
   return (
     <div className={styles.carousel} ref={carouselRef}>
       {Array.from({ length: 7 }, (_, i) => (
-        <img
+        <Image
           key={i}
           src={`/maid/${i + 1}.png`}
           alt={`maid screen ${i + 1}`}
