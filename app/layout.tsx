@@ -35,6 +35,9 @@ export const metadata: Metadata = {
   authors: {
     name: "Dane Madsen",
     url: "https://www.linkedin.com/in/dane-leonard-madsen/"
+  },
+  other: {
+    "google-adsense-account": "ca-pub-9118075995980578"
   }
 };
 
