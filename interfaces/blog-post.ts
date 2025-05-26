@@ -1,7 +1,9 @@
-interface BlogPost {
+import { JSX } from "react";
+
+export default interface BlogPost {
     slug: string;
     title: string;
     date: string;
-    content: string;
+    content: JSX.Element;
     excerpt: string;
 }

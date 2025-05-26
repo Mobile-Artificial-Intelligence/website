@@ -1,10 +1,8 @@
 import style from './page.module.css';
 import BlogPostMinimal from '@/components/blog-post-minimal';
-import getPosts from '@/utility/get-blog-posts';
+import posts from '@/utility/posts';
 
 async function BlogPage() {
-  const posts = getPosts();
-
   return (
     <div className={style.blog} >
       <h1>Mobile AI Blog</h1>

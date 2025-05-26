@@ -1,3 +1,4 @@
+import BlogPost from '@/interfaces/blog-post';
 import style from './blog-post-minimal.module.css';
 
 function BlogPostMinimal({ post }: { post: BlogPost }) {
