@@ -10,18 +10,18 @@ const posts: BlogPost[] = [
         content: (
             <div className={style.content} >
                 <p>At Google I/O 2025, Google DeepMind unveiled Veo 3, the latest evolution in AI-powered video generation. Building upon its predecessors, Veo 3 introduces groundbreaking features that blur the lines between AI-generated content and human-made films.</p>
-                <h2>Key Features of Veo 3:</h2>
+                <h2>Key Features of Veo 3</h2>
                 <ul>
                     <li><strong>Integrated Audio Generation:</strong> Veo 3 can produce synchronized audio, including dialogue, ambient sounds, and soundtracks, enhancing the realism of AI-generated videos.</li>
                     <li><strong>4K Video Output:</strong> The model supports high-resolution 4K video generation, providing crisp and detailed visuals suitable for professional use.</li>
                     <li><strong>Enhanced Prompt Adherence:</strong> Veo 3 exhibits improved understanding of complex prompts, allowing for more accurate and nuanced video outputs.</li>
                     <li><strong>Realistic Physics and Lip-Syncing:</strong> The model simulates real-world physics and offers accurate lip-syncing, contributing to the lifelike quality of the generated content.</li>
                 </ul>
-                <h2>Accessibility and Tools:</h2>
+                <h2>Accessibility and Tools</h2>
                 <p>Veo 3 is accessible through Google's AI Ultra subscription plan at $249 per month in the U.S. It is also integrated into Google's new AI filmmaking tool, Flow, which allows users to create short video clips using text or image prompts.</p>
-                <h2>Industry Reception:</h2>
+                <h2>Industry Impact</h2>
                 <p>The introduction of Veo 3 has garnered attention across various industries. Tesla CEO Elon Musk praised the model, highlighting its impressive capabilities. However, the realism of Veo 3's outputs has also sparked discussions about the ethical implications of AI-generated content and its impact on creative professions.</p>
-                <h2>Conclusion:</h2>
+                <h2>Conclusion</h2>
                 <p>Google's Veo 3 represents a significant advancement in AI video generation, offering tools that empower creators to produce high-quality, realistic videos with ease. As the technology continues to evolve, it will be essential to address the accompanying ethical considerations and ensure responsible use in various applications.</p>
             </div>
         )
