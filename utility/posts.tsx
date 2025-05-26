@@ -50,6 +50,63 @@ const posts: BlogPost[] = [
                 <p>The arrival of Claude 4 Sonnet and Opus with one-hour prompt caching represents a significant leap forward for accessible, efficient, and powerful AI. Whether you’re building with AI for the first time or scaling enterprise-grade solutions, these models offer enhanced speed, reliability, and flexibility for the future of human-AI collaboration.</p>
             </div>
         )
+    },
+    {
+        slug: "nvidia-llama-nemotron-agentic-ai",
+        title: "NVIDIA Unveils Llama Nemotron: Open-Source Agentic AI for the Enterprise",
+        date: "May 26, 2025",
+        excerpt: "NVIDIA announces the Llama Nemotron family—optimized large language models built for the next era of agentic AI, enabling enterprises to develop powerful, efficient, and customizable AI agents for real-world tasks.",
+        content: (
+            <div className={style.content}>
+                <p>
+                    Artificial intelligence is entering a new era—<strong>agentic AI</strong>—where teams of specialized agents can work together to solve complex problems and automate tasks across the enterprise. To drive this transformation, NVIDIA has announced the <strong>Llama Nemotron</strong> family: a new set of open, enterprise-grade large language models (LLMs) built with Meta’s Llama foundation.
+                </p>
+                <h2>Agentic AI: The Next Frontier</h2>
+                <p>
+                    Agentic AI moves beyond basic chatbots by enabling <strong>multiple, coordinated AI agents</strong> that can reason, perceive, and act in the world—revolutionizing how businesses approach automation and problem-solving. These advanced agents demand robust, efficient, and customizable language and vision models.
+                </p>
+                <h2>Introducing Llama Nemotron and Cosmos Nemotron</h2>
+                <ul>
+                    <li>
+                        <strong>Llama Nemotron:</strong> Optimized for enterprise use, these models excel at instruction following, chat, function calling, code, and math. They are pruned, distilled, and aligned using <strong>NVIDIA NeMo</strong> to boost agentic performance, accuracy, and throughput—while remaining compact enough for deployment across NVIDIA GPUs, from edge devices to data centers.
+                    </li>
+                    <li>
+                        <strong>Cosmos Nemotron VLMs:</strong> NVIDIA’s new vision-language models and NIM microservices allow AI agents to analyze and respond to images and video for tasks in robotics, healthcare, retail, logistics, sports, and more.
+                    </li>
+                </ul>
+                <h2>Key Features and Benefits</h2>
+                <ul>
+                    <li>
+                        <strong>Enterprise-Grade, Open Models:</strong> Built on Llama—one of the world’s most popular open LLMs—Nemotron is designed for commercial viability, with over 650 million downloads to date.
+                    </li>
+                    <li>
+                        <strong>Optimized for Agentic AI:</strong> Supports advanced reasoning, multi-step workflows, and seamless integration of language and vision, empowering businesses to automate complex processes.
+                    </li>
+                    <li>
+                        <strong>Flexible Deployment:</strong> Available as downloadable models or as <strong>NVIDIA NIM microservices</strong> for clouds, data centers, workstations, and even PCs—ensuring enterprise-grade security and integration.
+                    </li>
+                    <li>
+                        <strong>Customizable at Every Scale:</strong> Three sizes—<em>Nano</em> (edge devices), <em>Super</em> (single GPU), and <em>Ultra</em> (highest-accuracy, data center)—enable deployment for any workload.
+                    </li>
+                </ul>
+                <h2>Customization and Enterprise Tools</h2>
+                <p>
+                    Enterprises can easily fine-tune Nemotron models to their unique data and use cases using <strong>NVIDIA NeMo microservices</strong>. <strong>NeMo Retriever</strong> enables retrieval-augmented generation for connecting AI to real business knowledge. And with <strong>NVIDIA Blueprints</strong>, organizations can quickly build end-to-end agentic applications—including advanced video search and summarization.
+                </p>
+                <h2>Industry Impact and Partnerships</h2>
+                <p>
+                    Major platform providers like <strong>SAP</strong> and <strong>ServiceNow</strong> are integrating Llama Nemotron models to power next-generation enterprise AI agents for customer support, fraud detection, supply chain management, and more. As these agents collaborate, enterprises can unlock new levels of productivity, efficiency, and automation.
+                </p>
+                <h2>Availability</h2>
+                <p>
+                    The <strong>Llama Nemotron</strong> and <strong>Cosmos Nemotron</strong> model families will be available soon for free development and testing on <a href="https://build.nvidia.com/" target="_blank" rel="noopener noreferrer">build.nvidia.com</a> and Hugging Face, with production deployment via <strong>NVIDIA AI Enterprise</strong>. Join the NVIDIA Developer Program to get notified about early access and updates.
+                </p>
+                <h2>Conclusion</h2>
+                <p>
+                    As agentic AI becomes the new paradigm, NVIDIA’s Llama Nemotron models offer enterprises the tools and flexibility to lead the next wave of intelligent automation—delivering scalable, open, and powerful AI agents for real-world impact.
+                </p>
+            </div>
+        )
     }
 ];
 
