@@ -1,4 +1,5 @@
 import BlogPost from "@/interfaces/blog-post";
+import style from "./posts.module.css";
 
 const posts: BlogPost[] = [
     {
@@ -7,7 +8,7 @@ const posts: BlogPost[] = [
         "date": "May 26, 2025",
         "excerpt": "Google's Veo 3 revolutionizes AI video generation with integrated audio, 4K visuals, and cinematic realism, setting a new standard for creators and businesses.",
         "content": (
-            <div>
+            <div className={style.content} >
                 <p>At Google I/O 2025, Google DeepMind unveiled Veo 3, the latest evolution in AI-powered video generation. Building upon its predecessors, Veo 3 introduces groundbreaking features that blur the lines between AI-generated content and human-made films.</p>
                 <h2>Key Features of Veo 3:</h2>
                 <ul>
@@ -31,7 +32,7 @@ const posts: BlogPost[] = [
         "date": "May 26, 2025",
         "excerpt": "Anthropic introduces Claude 4 Sonnet and Opus, powerful new AI models featuring enhanced speed, accuracy, and efficiency with innovative 1-hour caching.",
         "content": (
-            <div>
+            <div className={style.content} >
                 <p>Anthropic has officially released its latest AI models, <strong>Claude 4 Sonnet</strong> and <strong>Claude 4 Opus</strong>, introducing powerful advancements in artificial intelligence performance and usability. These new models set a benchmark for extended reasoning, faster development workflows, and practical business use.</p>
                 <h2>Key Features and Enhancements</h2>
                 <ul>
