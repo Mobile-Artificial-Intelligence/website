@@ -1,8 +1,8 @@
-import './page.css';
+import style from './page.module.css';
 
 function PrivacyPolicy() {
   return (
-    <div id="privacy-policy" className="p-6 max-w-3xl mx-auto">
+    <div className={style.privacy}>
       <h1>Privacy Policy</h1>
       <p>
         This privacy policy applies to the Mobile Artificial Intelligence Distribution app (hereby referred to as &#34;Application&#34;) for mobile devices that was created by danemadsen (hereby referred to as &#34;Service Provider&#34;) as an Open Source service. This service is intended for use &#34;AS IS&#34;.

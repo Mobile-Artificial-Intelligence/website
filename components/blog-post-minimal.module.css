@@ -1,0 +1,24 @@
+.post {
+    padding: 10px 0;
+}
+
+.post h2 {
+    font-family: 'Space Mono', monospace;
+    font-size: 1.25rem;
+}
+
+.post h2:hover {
+    filter: drop-shadow(0 0 1em #00e1ff);
+}
+
+.post p {
+    font-size: 0.8rem;
+    margin: 0.5rem 0;
+    text-align: left;
+}
+
+.post a {
+    color: #a0effa;
+    text-decoration: none;
+    font-size: 0.8rem;
+}

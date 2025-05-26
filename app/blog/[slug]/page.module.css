@@ -1,0 +1,31 @@
+.post {
+    padding: 0 10%;
+}
+
+.post h1 {
+    padding: 1rem 0 0 0;
+    font-size: 1.5rem;
+}
+
+.post h1:hover {
+  filter: drop-shadow(0 0 1em #00e1ff);
+}
+
+.post h2 {
+    font-size: 1rem;
+}
+
+.post p, 
+.post li {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.8rem;
+}
+
+.date {
+    color: #7bfffd;
+}
+
+.content p,
+.content ul {
+    padding: 1rem 0;
+}

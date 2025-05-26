@@ -1,4 +1,4 @@
-#privacy-policy {
+.privacy {
     padding: 0 10%;
     display: flex;
     flex-direction: column;
@@ -6,27 +6,27 @@
     align-items: left;
 }
 
-#privacy-policy h1, 
-#privacy-policy h2 {
+.privacy h1, 
+.privacy h2 {
     transition: font-size 0.6s ease;
 }
 
-#privacy-policy h1, 
-#privacy-policy h2 {
+.privacy h1, 
+.privacy h2 {
     margin: 0;
     text-align: left;
     color: #a0effa;
 }
 
-#privacy-policy h1 {
+.privacy h1 {
     font-size: 1.5rem;
 }
 
-#privacy-policy h2 {
+.privacy h2 {
     font-size: 1.25rem;
 }
 
-#privacy-policy p {
+.privacy p {
     font-family: 'Space Mono', monospace;
     font-size: 0.8rem;
     margin: 0;
@@ -34,17 +34,17 @@
     text-align: left;
 }
 
-#privacy-policy ul {
+.privacy ul {
     list-style: none;
     padding-left: 2em;
 }
 
-#privacy-policy ul li {
+.privacy ul li {
     font-family: 'Space Mono', monospace;
     font-size: 0.8rem;
 }
 
-#privacy-policy ul li::before {
+.privacy ul li::before {
     content: "- ";
     margin-left: -1em;
 }

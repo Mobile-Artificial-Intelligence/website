@@ -1,4 +1,4 @@
-#try-maid-button {
+.maidButton {
   background-color: #ff00f2;
   color: #000;
   border: none;
@@ -9,6 +9,6 @@
   cursor: pointer;
 }
 
-#try-maid-button:hover {
+.maidButton:hover {
   filter: drop-shadow(0 0 4em #ff00f2);
 }
