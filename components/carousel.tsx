@@ -86,7 +86,7 @@ export default function Carousel() {
           key={i}
           width={225}
           height={500}
-          src={`/maid/${i + 1}.png`}
+          src={`/images/maid-screenshot-${i + 1}.png`}
           alt={`maid screen ${i + 1}`}
           onClick={toggleImage}
           style={{ pointerEvents: "auto", cursor: "zoom-in" }}
