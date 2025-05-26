@@ -5,6 +5,7 @@
 .post h2 {
     font-family: 'Space Mono', monospace;
     font-size: 1.25rem;
+    color: #bff8ff;
 }
 
 .post h2:hover {
