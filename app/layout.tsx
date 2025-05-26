@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Geist, Space_Mono } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -50,7 +51,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9118075995980578" crossOrigin="anonymous"></script>
+        <Script async strategy="beforeInteractive" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9118075995980578" crossOrigin="anonymous"></Script>
       </head>
       <body className={`${geistSans.variable} ${spaceMono.variable}`}>
         <header>
