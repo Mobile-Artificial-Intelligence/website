@@ -1,9 +1,7 @@
 #title-section {
-  padding: 0 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   height: 100vh;
 }
 
@@ -14,7 +12,6 @@
 
 #title-section h1 {
   font-size: 2.25rem;
-  margin: 0;
   text-align: center;
 }
 
@@ -25,7 +22,6 @@
 #title-section h2 {
   font-family: 'Space Mono', monospace;
   font-size: 1.25rem;
-  margin: 0;
   text-align: center;
 }
 
