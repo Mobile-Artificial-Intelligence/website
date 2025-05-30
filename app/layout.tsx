@@ -31,6 +31,13 @@ export const metadata: Metadata = {
     "AI Companion",
     "AI Friend"
   ],
+  openGraph: {
+    title: "Mobile Artificial Intelligence",
+    description: "Mobile Artifical Intelligence specializes in creating AI-powered mobile applications that enhance user experience and provide intelligent assistance.",
+    url: "https://mobile-artificial-intelligence.com",
+    siteName: "Mobile Artificial Intelligence",
+    type: "website",
+  },
   robots: { index: true, follow: true },
   creator: "Dane Madsen",
   authors: {
