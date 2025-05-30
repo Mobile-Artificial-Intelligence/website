@@ -1,18 +1,18 @@
 import Image from "next/image";
 import Carousel from "@/components/carousel";
 import TryMaidButton from "@/components/try-maid-button";
-import "./page.css";
+import styles from "./page.module.css";
 
 export default function Home() {
   return (
     <div>
-      <section id="title-section">
+      <section className={styles.titleSection} >
           <h1>Mobile + AI</h1>
           <h2>Artificial Intelligence on the edge</h2>
           <h2>Brisbane, Australia</h2>
       </section>
-      <section id="maid-section">
-          <div className="maid-text">
+      <section className={styles.maidSection} >
+          <div className={styles.maidText} >
               <h1>Mobile Artificial Intelligence Distribution</h1>
               <p>
                   The Mobile Artifical Intelligence Distribution (MAID) project is a research initiative 
@@ -26,7 +26,7 @@ export default function Home() {
               </p>
           </div>
           <TryMaidButton />
-          <div className="maid-text">
+          <div className={styles.maidText} >
               <h2>First of its kind</h2>
               <p>
                   In development since 2022, Maid is the first project to allow users to conveniently chat with 
@@ -37,8 +37,8 @@ export default function Home() {
                   using a mobile device, a desktop computer, or a web browser, Maid has you covered.
               </p>
           </div>
-          <div id="maid-lists">
-              <div className="maid-text">
+          <div className={styles.maidLists} >
+              <div className={styles.maidText} >
                   <h2>Supported Ecosystems</h2>
                   <ul>
                       <li>Llama.cpp</li>
@@ -48,7 +48,7 @@ export default function Home() {
                       <li>Anthropic</li>
                   </ul>
               </div>
-              <div className="maid-text">
+              <div className={styles.maidText} >
                   <h2>Supported Platforms</h2>
                   <ul>
                       <li>Android</li>
@@ -59,7 +59,7 @@ export default function Home() {
                   </ul>
               </div>
           </div>
-          <div id="maid-links">
+          <div className={styles.maidLinks} >
               <a href="https://play.google.com/store/apps/details?id=com.danemadsen.maid&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
                 <Image 
                   src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
@@ -103,7 +103,7 @@ export default function Home() {
           </div>
           <Carousel />
       </section>
-      <section id="sdk-section">
+      <section className={styles.sdkSection} >
           <h1>llama_sdk</h1>
           <p>
               `llama_sdk` is a dart package created for the Mobile Artificial Intelligence Distribution (MAID) project.
@@ -117,7 +117,7 @@ export default function Home() {
               modifications.
           </p>
           <p>Add `llama_sdk` to your flutter project now by running the following command in your flutter project root:</p>
-          <div className="code-box" ><code>flutter pub add llama_sdk</code></div>
+          <div className={styles.codebox} ><code>flutter pub add llama_sdk</code></div>
       </section>
     </div>
   );
