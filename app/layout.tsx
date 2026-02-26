@@ -17,23 +17,30 @@ const spaceMono = Space_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Mobile Artificial Intelligence",
-  description: "Mobile Artifical Intelligence specializes in creating AI-powered mobile applications that enhance user experience and provide intelligent assistance.",
+  title: "Mobile Artificial Intelligence | AI on the Edge",
+  description: "Mobile Artificial Intelligence builds open-source Android apps for running AI models entirely on-device — private, offline, and fast. No cloud required.",
   keywords: [
-    "Mobile AI",
+    "edge AI",
+    "on-device AI",
+    "local AI inference",
+    "offline AI",
+    "private AI",
+    "mobile AI",
+    "local LLM",
+    "llama.cpp",
+    "GGUF models",
+    "on-device TTS",
+    "open source AI",
+    "Android AI app",
+    "run AI locally",
+    "AI without cloud",
     "Mobile Artificial Intelligence",
-    "Mobile AI Apps",
-    "AI Maid",
-    "AI Assistant",
-    "AI Girlfriend",
-    "AI Boyfriend",
-    "AI Chatbot",
-    "AI Companion",
-    "AI Friend"
+    "Maid AI",
+    "Maise TTS"
   ],
   openGraph: {
-    title: "Mobile Artificial Intelligence",
-    description: "Mobile Artifical Intelligence specializes in creating AI-powered mobile applications that enhance user experience and provide intelligent assistance.",
+    title: "Mobile Artificial Intelligence | AI on the Edge",
+    description: "Open-source tools for running AI entirely on your device — private, offline, and fast. No cloud required.",
     url: "https://mobile-artificial-intelligence.com",
     siteName: "Mobile Artificial Intelligence",
     type: "website",
@@ -72,8 +79,10 @@ export default function RootLayout({
                 </h1>
             </div>
             <div id='link-group'>
-                <Link href="https://github.com/orgs/Mobile-Artificial-Intelligence/repositories">Github</Link>
-                <Link href="/privacy">Privacy Policy</Link>
+                <Link href="/maid">Maid</Link>
+                <Link href="/maise">Maise</Link>
+                <Link href="https://github.com/orgs/Mobile-Artificial-Intelligence/repositories">GitHub</Link>
+                <Link href="/privacy">Privacy</Link>
             </div>
         </header>
         {children}
