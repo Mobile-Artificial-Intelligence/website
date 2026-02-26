@@ -3,7 +3,13 @@ name: Website
 on:
   push:
     branches:
-      - website
+      - main
+    paths:
+      - '.github/workflows/deploy.yml'
+      - 'app/**'
+      - 'public/**'
+      - 'package.json'
+      - 'yarn.lock'
 
 permissions:
   contents: write
