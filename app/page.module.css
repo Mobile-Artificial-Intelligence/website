@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding: 2rem 10%;
+  padding: 2rem 3rem;
   text-align: center;
 }
 
@@ -61,8 +61,8 @@
 
 /* Mission */
 .mission {
-  padding: 4rem 10%;
-  max-width: 900px;
+  padding: 4rem 3rem;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -107,8 +107,8 @@
 
 /* Projects */
 .projects {
-  padding: 4rem 10%;
-  max-width: 900px;
+  padding: 4rem 3rem;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -183,5 +183,10 @@
 
   .hero h1 {
     font-size: 2.25rem;
+  }
+
+  .mission,
+  .projects {
+    padding: 3rem 1.5rem;
   }
 }
