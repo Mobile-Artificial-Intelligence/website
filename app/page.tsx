@@ -29,14 +29,7 @@ export default function Home() {
       <section className={styles.hero}>
         <h1>Mobile + AI</h1>
         <p className={styles.tagline}>Artificial Intelligence on the Edge</p>
-        <p className={styles.subtitle}>
-          Open-source tools for running AI entirely on your device —{" "}
-          private, offline, and fast.
-        </p>
-        <div className={styles.heroCta}>
-          <Link href="/maid" className={styles.ctaButton}>Explore Maid</Link>
-          <Link href="/maise" className={styles.ctaButton}>Explore Maise</Link>
-        </div>
+        <p className={styles.tagline}>Brisbane, Australia</p>
       </section>
 
       <section className={styles.mission}>

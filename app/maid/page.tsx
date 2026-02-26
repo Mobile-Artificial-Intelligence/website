@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 import styles from "./page.module.css";
 
@@ -76,20 +77,30 @@ export default function MaidPage() {
         </p>
         <div className={styles.heroCta}>
           <Link
-            href="https://github.com/Mobile-Artificial-Intelligence/maid"
-            className={styles.ctaButton}
+            href="https://play.google.com/store/apps/details?id=com.danemadsen.maid&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
             target="_blank"
             rel="noopener noreferrer"
           >
-            View on GitHub
+            <Image
+              src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+              alt="Get it on Google Play"
+              width={200}
+              height={77}
+              className={styles.badge}
+            />
           </Link>
           <Link
-            href="https://github.com/Mobile-Artificial-Intelligence/maid/releases"
-            className={styles.ctaButtonSecondary}
+            href="https://github.com/Mobile-Artificial-Intelligence/maid/releases/latest"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Download APK
+            <Image
+              src="https://raw.githubusercontent.com/NeoApplications/Neo-Backup/refs/heads/main/badge_github.png"
+              alt="Download from GitHub"
+              width={200}
+              height={77}
+              className={styles.badge}
+            />
           </Link>
         </div>
       </section>

@@ -21,7 +21,6 @@
 .tagline {
   font-family: 'Space Mono', monospace;
   font-size: 1.25rem;
-  color: #00e1ff;
   margin-top: 0.5rem;
   transition: font-size 0.6s ease;
 }
