@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import styles from "./page.module.css";
+import shared from "@/app/shared.module.css";
 
 export const metadata: Metadata = {
   title: "Maid — Local AI Chat for Android | Mobile Artificial Intelligence",
@@ -69,16 +70,16 @@ const techDetails = [
 
 export default function MaidPage() {
   return (
-    <main className={styles.page}>
-      <section className={styles.hero}>
-        <h1>Maid</h1>
-        <p className={styles.tagline}>Local AI Chat for Android</p>
-        <p className={styles.description}>
+    <main className={shared.page}>
+      <section className={shared.hero}>
+        <h1 className={shared.heroTitle}>Maid</h1>
+        <p className={shared.tagline}>Local AI Chat for Android</p>
+        <p className={shared.description}>
           A free, open-source Android app that lets you chat with AI models
           entirely on your device — no subscription, no cloud, no data leaving
           your phone.
         </p>
-        <div className={styles.heroCta}>
+        <div className={shared.heroCta}>
           <Link
             href="https://play.google.com/store/apps/details?id=com.danemadsen.maid&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
             target="_blank"
@@ -108,29 +109,29 @@ export default function MaidPage() {
         </div>
       </section>
 
-      <section className={styles.features}>
-        <h2>Features</h2>
-        <div className={styles.featureGrid}>
+      <section className={shared.section}>
+        <h2 className={shared.sectionTitle}>Features</h2>
+        <div className={shared.grid3}>
           {features.map((f) => (
-            <div key={f.title} className={styles.featureCard}>
-              <h3>{f.title}</h3>
-              <p>{f.description}</p>
+            <div key={f.title} className={shared.card}>
+              <h3 className={shared.cardTitle}>{f.title}</h3>
+              <p className={shared.cardBody}>{f.description}</p>
             </div>
           ))}
         </div>
       </section>
 
-      <section className={styles.realWorld}>
-        <h2>Used Around the World</h2>
-        <p className={styles.realWorldIntro}>
+      <section className={shared.section}>
+        <h2 className={shared.sectionTitle}>Used Around the World</h2>
+        <p className={shared.sectionIntro}>
           When the internet goes down — or when going online isn&apos;t safe —
           Maid keeps working. Because everything runs on the device, users
           in the most difficult circumstances in the world have come to rely on it.
         </p>
-        <div className={styles.realWorldGrid}>
+        <div className={shared.grid3}>
           <div className={styles.realWorldCard}>
-            <h3>Active Conflict Zones</h3>
-            <p>
+            <h3 className={shared.cardTitle}>Active Conflict Zones</h3>
+            <p className={shared.cardBody}>
               People in Ukraine and Gaza have used Maid to access AI
               assistance when internet infrastructure is destroyed, unreliable,
               or actively monitored. No connection means no exposure — the
@@ -138,16 +139,16 @@ export default function MaidPage() {
             </p>
           </div>
           <div className={styles.realWorldCard}>
-            <h3>First Responders</h3>
-            <p>
+            <h3 className={shared.cardTitle}>First Responders</h3>
+            <p className={shared.cardBody}>
               Emergency services and first responders operating in remote or
               disaster-affected areas use Maid as an AI reference tool when
               mobile data is unavailable or too slow to be useful.
             </p>
           </div>
           <div className={styles.realWorldCard}>
-            <h3>Off-Grid &amp; Remote</h3>
-            <p>
+            <h3 className={shared.cardTitle}>Off-Grid &amp; Remote</h3>
+            <p className={shared.cardBody}>
               From rural communities to offshore vessels, Maid works anywhere
               an Android phone works — no Wi-Fi, no cell signal, no problem.
             </p>
@@ -155,30 +156,32 @@ export default function MaidPage() {
         </div>
       </section>
 
-      <section className={styles.tech}>
-        <h2>Technical Details</h2>
-        <dl className={styles.techList}>
+      <section className={shared.section}>
+        <h2 className={shared.sectionTitle}>Technical Details</h2>
+        <dl className={shared.techList}>
           {techDetails.map((t) => (
-            <div key={t.label} className={styles.techRow}>
-              <dt>{t.label}</dt>
-              <dd>{t.value}</dd>
+            <div key={t.label} className={shared.techRow}>
+              <dt className={shared.techLabel}>{t.label}</dt>
+              <dd className={shared.techValue}>{t.value}</dd>
             </div>
           ))}
         </dl>
       </section>
 
-      <section className={styles.cta}>
-        <p>
-          Maid is MIT licensed and built by contributors around the world.
-        </p>
-        <Link
-          href="https://github.com/Mobile-Artificial-Intelligence/maid"
-          className={styles.ctaButton}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Contribute on GitHub →
-        </Link>
+      <section className={shared.section}>
+        <div className={shared.ctaWrapper}>
+          <p className={shared.sectionIntro}>
+            Maid is MIT licensed and built by contributors around the world.
+          </p>
+          <Link
+            href="https://github.com/Mobile-Artificial-Intelligence/maid"
+            className={shared.ctaButton}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Contribute on GitHub →
+          </Link>
+        </div>
       </section>
     </main>
   );

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import styles from "./page.module.css";
+import shared from "@/app/shared.module.css";
 
 export const metadata: Metadata = {
   title: "Maise — On-Device Text-to-Speech for Android | Mobile Artificial Intelligence",
@@ -71,19 +72,19 @@ const languages = [
 
 export default function MaisePage() {
   return (
-    <main className={styles.page}>
-      <section className={styles.hero}>
-        <h1>Maise</h1>
-        <p className={styles.tagline}>On-Device Text-to-Speech for Android</p>
-        <p className={styles.description}>
+    <main className={shared.page}>
+      <section className={shared.hero}>
+        <h1 className={shared.heroTitle}>Maise</h1>
+        <p className={shared.tagline}>On-Device Text-to-Speech for Android</p>
+        <p className={shared.description}>
           A free, open-source Android TTS engine that synthesizes speech
           entirely on your device. 40+ voices, 9 languages, zero internet
           required.
         </p>
-        <div className={styles.heroCta}>
+        <div className={shared.heroCta}>
           <Link
             href="https://github.com/Mobile-Artificial-Intelligence/maise"
-            className={styles.ctaButton}
+            className={shared.ctaButton}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -91,7 +92,7 @@ export default function MaisePage() {
           </Link>
           <Link
             href="https://github.com/Mobile-Artificial-Intelligence/maise/releases"
-            className={styles.ctaButtonSecondary}
+            className={shared.ctaButtonSecondary}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -100,52 +101,54 @@ export default function MaisePage() {
         </div>
       </section>
 
-      <section className={styles.features}>
-        <h2>Features</h2>
-        <div className={styles.featureGrid}>
+      <section className={shared.section}>
+        <h2 className={shared.sectionTitle}>Features</h2>
+        <div className={shared.grid3}>
           {features.map((f) => (
-            <div key={f.title} className={styles.featureCard}>
-              <h3>{f.title}</h3>
-              <p>{f.description}</p>
+            <div key={f.title} className={shared.card}>
+              <h3 className={shared.cardTitle}>{f.title}</h3>
+              <p className={shared.cardBody}>{f.description}</p>
             </div>
           ))}
         </div>
       </section>
 
-      <section className={styles.languages}>
-        <h2>Supported Languages</h2>
+      <section className={shared.section}>
+        <h2 className={shared.sectionTitle}>Supported Languages</h2>
         <ul className={styles.langList}>
           {languages.map((lang) => (
-            <li key={lang}>{lang}</li>
+            <li key={lang} className={styles.langItem}>{lang}</li>
           ))}
         </ul>
       </section>
 
-      <section className={styles.tech}>
-        <h2>Technical Details</h2>
-        <dl className={styles.techList}>
+      <section className={shared.section}>
+        <h2 className={shared.sectionTitle}>Technical Details</h2>
+        <dl className={shared.techList}>
           {techDetails.map((t) => (
-            <div key={t.label} className={styles.techRow}>
-              <dt>{t.label}</dt>
-              <dd>{t.value}</dd>
+            <div key={t.label} className={shared.techRow}>
+              <dt className={shared.techLabel}>{t.label}</dt>
+              <dd className={shared.techValue}>{t.value}</dd>
             </div>
           ))}
         </dl>
       </section>
 
-      <section className={styles.cta}>
-        <p>
-          Maise is MIT licensed and actively developed. v1.0.0 released
-          February 2026.
-        </p>
-        <Link
-          href="https://github.com/Mobile-Artificial-Intelligence/maise"
-          className={styles.ctaButton}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Contribute on GitHub →
-        </Link>
+      <section className={shared.section}>
+        <div className={shared.ctaWrapper}>
+          <p className={shared.sectionIntro}>
+            Maise is MIT licensed and actively developed. v1.0.0 released
+            February 2026.
+          </p>
+          <Link
+            href="https://github.com/Mobile-Artificial-Intelligence/maise"
+            className={shared.ctaButton}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Contribute on GitHub →
+          </Link>
+        </div>
       </section>
     </main>
   );
