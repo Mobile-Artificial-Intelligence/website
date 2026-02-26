@@ -15,7 +15,7 @@
 }
 
 .hero h1:hover {
-  filter: drop-shadow(0 0 1em #00e1ff);
+  filter: drop-shadow(0 0 1em #00b7ff);
 }
 
 .tagline {
@@ -46,17 +46,17 @@
   font-family: 'Space Mono', monospace;
   font-size: 0.9rem;
   padding: 0.6rem 1.4rem;
-  border: 1px solid #00e1ff;
+  border: 1px solid #00b7ff;
   border-radius: 6px;
-  color: #00e1ff;
+  color: #00b7ff;
   text-decoration: none;
   transition: background 0.2s ease, color 0.2s ease, filter 0.2s ease;
 }
 
 .ctaButton:hover {
-  background: #00e1ff;
+  background: #00b7ff;
   color: #0a0a0a;
-  filter: drop-shadow(0 0 0.6em #00e1ff);
+  filter: drop-shadow(0 0 0.6em #00b7ff);
 }
 
 /* Mission */
@@ -68,7 +68,7 @@
 
 .mission h2 {
   font-size: 1.75rem;
-  color: #00e1ff;
+  color: #00b7ff;
   margin-bottom: 1rem;
 }
 
@@ -94,7 +94,7 @@
 
 .pillar h3 {
   font-size: 1rem;
-  color: #00e1ff;
+  color: #00b7ff;
   margin-bottom: 0.5rem;
 }
 
@@ -114,7 +114,7 @@
 
 .projects h2 {
   font-size: 1.75rem;
-  color: #00e1ff;
+  color: #00b7ff;
   margin-bottom: 1.5rem;
 }
 
@@ -136,13 +136,13 @@
 }
 
 .projectCard:hover {
-  border-color: #00e1ff;
+  border-color: #00b7ff;
   filter: drop-shadow(0 0 0.5em rgba(0, 225, 255, 0.25));
 }
 
 .projectCard h3 {
   font-size: 1.25rem;
-  color: #00e1ff;
+  color: #00b7ff;
   margin-bottom: 0.75rem;
 }
 
@@ -157,7 +157,7 @@
 .cardLink {
   font-family: 'Space Mono', monospace;
   font-size: 0.8rem;
-  color: #00e1ff;
+  color: #00b7ff;
   margin-top: 1.25rem;
 }
 

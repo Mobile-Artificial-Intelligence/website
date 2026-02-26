@@ -69,7 +69,7 @@ header {
   transition: filter 300ms, height 0.6s ease;
 }
 #logo-group img:hover {
-  filter: drop-shadow(0 0 1em #00e1ff);
+  filter: drop-shadow(0 0 1em #00b7ff);
 }
 
 /* Show full title by default */
@@ -127,7 +127,7 @@ h1 #title-short {
   left: 0;
   width: 100%;
   height: 2px;
-  background: #00e1ff;
+  background: #00b7ff;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease, transform-origin 0s ease 0.3s;
@@ -135,7 +135,7 @@ h1 #title-short {
 }
 
 #link-group a:hover {
-  filter: drop-shadow(0 0 1em #00e1ff);
+  filter: drop-shadow(0 0 1em #00b7ff);
 }
 
 #link-group a:hover::after {
