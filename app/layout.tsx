@@ -83,6 +83,7 @@ export default function RootLayout({
                 <Link href="/maise">Maise</Link>
                 <Link href="https://github.com/orgs/Mobile-Artificial-Intelligence/repositories">GitHub</Link>
                 <Link href="/privacy">Privacy</Link>
+                <Link href="/terms">Terms</Link>
             </div>
         </header>
         {children}
