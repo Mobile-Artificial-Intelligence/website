@@ -131,6 +131,54 @@
   opacity: 0.75;
 }
 
+/* Real World */
+.realWorld {
+  padding: 4rem 3rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.realWorld h2 {
+  font-size: 1.75rem;
+  color: #00b7ff;
+  margin-bottom: 1rem;
+}
+
+.realWorldIntro {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.9rem;
+  line-height: 1.8;
+  opacity: 0.8;
+  max-width: 720px;
+  margin-bottom: 2rem;
+}
+
+.realWorldGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.realWorldCard {
+  padding: 1.5rem;
+  border: 1px solid rgba(0, 183, 255, 0.2);
+  border-radius: 8px;
+  border-left: 3px solid #00b7ff;
+}
+
+.realWorldCard h3 {
+  font-size: 0.95rem;
+  color: #00b7ff;
+  margin-bottom: 0.75rem;
+}
+
+.realWorldCard p {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.78rem;
+  line-height: 1.8;
+  opacity: 0.75;
+}
+
 /* Tech */
 .tech {
   padding: 4rem 3rem;
@@ -192,9 +240,14 @@
   }
 
   .features,
+  .realWorld,
   .tech,
   .cta {
     padding: 3rem 1.5rem;
+  }
+
+  .realWorldGrid {
+    grid-template-columns: 1fr;
   }
 
   .featureGrid {

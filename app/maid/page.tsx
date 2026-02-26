@@ -19,6 +19,9 @@ export const metadata: Metadata = {
     "local language model",
     "AI without internet",
     "Maid AI app",
+    "offline AI warzone",
+    "AI first responders",
+    "AI no connectivity",
   ],
   openGraph: {
     title: "Maid — Local AI Chat for Android",
@@ -114,6 +117,41 @@ export default function MaidPage() {
               <p>{f.description}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section className={styles.realWorld}>
+        <h2>Used Around the World</h2>
+        <p className={styles.realWorldIntro}>
+          When the internet goes down — or when going online isn&apos;t safe —
+          Maid keeps working. Because everything runs on the device, users
+          in the most difficult circumstances in the world have come to rely on it.
+        </p>
+        <div className={styles.realWorldGrid}>
+          <div className={styles.realWorldCard}>
+            <h3>Active Conflict Zones</h3>
+            <p>
+              People in Ukraine and Gaza have used Maid to access AI
+              assistance when internet infrastructure is destroyed, unreliable,
+              or actively monitored. No connection means no exposure — the
+              model runs entirely on the phone.
+            </p>
+          </div>
+          <div className={styles.realWorldCard}>
+            <h3>First Responders</h3>
+            <p>
+              Emergency services and first responders operating in remote or
+              disaster-affected areas use Maid as an AI reference tool when
+              mobile data is unavailable or too slow to be useful.
+            </p>
+          </div>
+          <div className={styles.realWorldCard}>
+            <h3>Off-Grid &amp; Remote</h3>
+            <p>
+              From rural communities to offshore vessels, Maid works anywhere
+              an Android phone works — no Wi-Fi, no cell signal, no problem.
+            </p>
+          </div>
         </div>
       </section>
 
