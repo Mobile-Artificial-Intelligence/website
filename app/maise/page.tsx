@@ -4,8 +4,8 @@ import styles from "./page.module.css";
 import shared from "@/app/shared.module.css";
 
 export const metadata: Metadata = {
-  title: "Maise — On-Device Text-to-Speech for Android | Mobile Artificial Intelligence",
-  description: "Maise is a free, open-source Android TTS engine that synthesizes speech entirely on-device using ONNX Runtime. 40+ voices across 9 languages. No internet required.",
+  title: "Maise — On-Device Speech for Android | Mobile Artificial Intelligence",
+  description: "Maise is a free, open-source Android speech engine with on-device TTS and ASR. 40+ Kokoro voices across 9 languages plus Whisper speech recognition — no internet required.",
   keywords: [
     "on-device TTS",
     "Android text-to-speech",
@@ -19,10 +19,14 @@ export const metadata: Metadata = {
     "no cloud TTS",
     "Maise TTS",
     "on-device speech",
+    "Whisper ASR",
+    "Android speech recognition",
+    "on-device ASR",
+    "offline speech-to-text",
   ],
   openGraph: {
-    title: "Maise — On-Device Text-to-Speech for Android",
-    description: "Open-source Android TTS engine with 40+ voices across 9 languages, powered by ONNX Runtime. Synthesizes speech entirely on-device — no internet required.",
+    title: "Maise — On-Device Speech for Android",
+    description: "Open-source Android speech engine with 40+ TTS voices and Whisper ASR, powered by ONNX Runtime. Runs entirely on-device — no internet required.",
     url: "https://mobile-artificial-intelligence.com/maise",
     siteName: "Mobile Artificial Intelligence",
     type: "website",
@@ -32,11 +36,15 @@ export const metadata: Metadata = {
 const features = [
   {
     title: "Fully On-Device",
-    description: "Speech synthesis runs entirely on your Android device using ONNX Runtime. Your text never leaves your phone.",
+    description: "Speech synthesis and recognition run entirely on your Android device using ONNX Runtime. Your audio and text never leave your phone.",
   },
   {
     title: "40+ Voices",
     description: "Powered by the Kokoro engine with voices across English (US/UK), German, French, Greek, Italian, Japanese, Portuguese, and Chinese.",
+  },
+  {
+    title: "Whisper ASR",
+    description: "On-device automatic speech recognition via Whisper, enabling accurate offline transcription without any cloud dependency.",
   },
   {
     title: "System-Wide TTS",
@@ -52,7 +60,7 @@ const features = [
   },
   {
     title: "Maid Integration",
-    description: "Pairs with Maid for fully on-device AI conversations — local inference and local voice, end to end.",
+    description: "Pairs with Maid for fully on-device AI conversations — local inference, local voice, and local transcription, end to end.",
   },
 ];
 
@@ -61,7 +69,8 @@ const techDetails = [
   { label: "Language", value: "Kotlin" },
   { label: "Runtime", value: "ONNX Runtime" },
   { label: "Audio", value: "24 kHz mono 16-bit PCM" },
-  { label: "Engines", value: "Kokoro, Kitten TTS" },
+  { label: "TTS Engine", value: "Kokoro" },
+  { label: "ASR Engine", value: "Whisper" },
   { label: "License", value: "MIT" },
 ];
 
@@ -75,10 +84,10 @@ export default function MaisePage() {
     <main className={shared.page}>
       <section className={shared.hero}>
         <h1 className={shared.heroTitle}>Maise</h1>
-        <p className={shared.tagline}>On-Device Text-to-Speech for Android</p>
+        <p className={shared.tagline}>On-Device Speech for Android</p>
         <p className={shared.description}>
-          A free, open-source Android TTS engine that synthesizes speech
-          entirely on your device. 40+ voices, 9 languages, zero internet
+          A free, open-source Android speech engine with on-device TTS and ASR.
+          40+ voices, 9 languages, Whisper transcription — zero internet
           required.
         </p>
         <div className={shared.heroCta}>
