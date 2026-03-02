@@ -181,6 +181,10 @@ export default function MaidPage() {
           >
             Contribute on GitHub →
           </Link>
+          <div className={shared.heroCta} style={{ justifyContent: 'flex-start', marginTop: 0 }}>
+            <Link href="/maid/privacy" className={shared.ctaButtonSecondary}>Privacy Policy</Link>
+            <Link href="/maid/terms" className={shared.ctaButtonSecondary}>Terms &amp; Conditions</Link>
+          </div>
         </div>
       </section>
     </main>

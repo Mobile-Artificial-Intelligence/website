@@ -34,7 +34,7 @@ function PrivacyPolicy() {
             location of your mobile device.
           </p>
           <p>
-            The Application will collect certain non identifiable metadata about your usage of the Application, if and only if 
+            The Application will collect certain non identifiable metadata about your usage of the Application, if and only if
             you sign up for an Account in the Application. This metadata may include, but is not limited to:
           </p>
           <ul>
