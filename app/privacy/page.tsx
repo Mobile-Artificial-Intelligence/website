@@ -34,26 +34,14 @@ function PrivacyPolicy() {
             location of your mobile device.
           </p>
           <p>
-            The Application collects your device&apos;s location to help the Service
-            Provider determine your approximate geographical location and to use
-            it in the following ways:
+            The Application will collect certain non identifiable metadata about your usage of the Application, if and only if 
+            you sign up for an Account in the Application. This metadata may include, but is not limited to:
           </p>
           <ul>
-            <li>
-              <strong>Geolocation Services:</strong> Utilizes location data to
-              provide features such as personalized content, relevant
-              recommendations, and location-based services.
-            </li>
-            <li>
-              <strong>Analytics and Improvements:</strong> Uses aggregated and
-              anonymized location data to analyze user behavior, identify trends,
-              and improve overall performance and functionality.
-            </li>
-            <li>
-              <strong>Third-Party Services:</strong> Periodically transmits
-              anonymized location data to external services to help enhance the
-              Application and optimize the offerings.
-            </li>
+            <li>The Large Language Model inference provider you have used</li>
+            <li>The Large Language Model you have used</li>
+            <li>The version of the Application you are using</li>
+            <li>The version of the operating system you are using</li>
           </ul>
           <p>
             The Service Provider may also use the information you provide to
