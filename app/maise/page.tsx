@@ -157,6 +157,10 @@ export default function MaisePage() {
           >
             Contribute on GitHub →
           </Link>
+          <div className={shared.heroCta} style={{ justifyContent: 'flex-start', marginTop: 0 }}>
+            <Link href="/maise/privacy" className={shared.ctaButtonSecondary}>Privacy Policy</Link>
+            <Link href="/maise/terms" className={shared.ctaButtonSecondary}>Terms &amp; Conditions</Link>
+          </div>
         </div>
       </section>
     </main>

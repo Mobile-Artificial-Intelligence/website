@@ -1,0 +1,125 @@
+.page {
+  padding-bottom: 6rem;
+}
+
+/* Header */
+.header {
+  padding: 5rem 3rem 3rem;
+  border-bottom: 1px solid rgba(0, 183, 255, 0.15);
+  margin-bottom: 3rem;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  color: #00b7ff;
+  margin-bottom: 0.5rem;
+}
+
+.effective {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.8rem;
+  opacity: 0.5;
+}
+
+/* Content */
+.content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+.content > p {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.85rem;
+  line-height: 1.8;
+  opacity: 0.75;
+  margin-bottom: 2rem;
+}
+
+/* Sections */
+.section {
+  padding: 1.75rem;
+  border: 1px solid rgba(0, 183, 255, 0.15);
+  border-radius: 8px;
+  margin-bottom: 1.25rem;
+}
+
+.section h2 {
+  font-size: 1rem;
+  color: #00b7ff;
+  margin-bottom: 1rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid rgba(0, 183, 255, 0.15);
+}
+
+.section p {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.8rem;
+  line-height: 1.8;
+  opacity: 0.75;
+  margin-bottom: 0.75rem;
+}
+
+.section p:last-child {
+  margin-bottom: 0;
+}
+
+.section ul {
+  list-style: none;
+  padding-left: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.section ul li {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.8rem;
+  line-height: 1.8;
+  opacity: 0.75;
+  padding: 0.2rem 0;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.section ul li::before {
+  content: '—';
+  position: absolute;
+  left: -0.5rem;
+  color: #00b7ff;
+  opacity: 0.6;
+}
+
+.section a {
+  color: #00b7ff;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 183, 255, 0.35);
+  transition: border-color 0.2s ease, opacity 0.2s ease;
+}
+
+.section a:hover {
+  border-color: #00b7ff;
+  opacity: 1;
+}
+
+.section strong {
+  color: inherit;
+  opacity: 1;
+  font-weight: 700;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header {
+    padding: 3rem 1.5rem 2rem;
+  }
+
+  .header h1 {
+    font-size: 1.75rem;
+  }
+
+  .content {
+    padding: 0 1.5rem;
+  }
+}
