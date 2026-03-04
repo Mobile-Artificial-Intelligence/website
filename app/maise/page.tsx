@@ -159,7 +159,7 @@ export default function MaisePage() {
             <span className={styles.cardLink}>Read guide →</span>
           </Link>
         </div>
-        <div style={{ marginTop: "1rem" }}>
+        <div style={{ marginTop: "4rem" }}>
           <Link href="/maise/guides" className={shared.ctaButtonSecondary}>View all guides →</Link>
         </div>
       </section>
