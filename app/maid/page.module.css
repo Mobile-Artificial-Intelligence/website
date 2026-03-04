@@ -18,6 +18,7 @@
   padding-bottom: 1rem;
   scrollbar-width: thin;
   scrollbar-color: rgba(0, 225, 255, 0.3) transparent;
+  justify-content: center;
 }
 
 .screenshotGallery::-webkit-scrollbar {

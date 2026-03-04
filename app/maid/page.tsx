@@ -215,6 +215,38 @@ export default function MaidPage() {
       </section>
 
       <section className={shared.section}>
+        <h2 className={shared.sectionTitle}>Guides</h2>
+        <p className={shared.sectionIntro}>
+          Step-by-step setup guides for every supported AI provider.
+        </p>
+        <div className={shared.grid2}>
+          <Link href="/maid/guides/llama-cpp" className={styles.projectCard}>
+            <h3 className={shared.cardTitle}>Run AI Locally with llama.cpp</h3>
+            <p className={shared.cardBody}>No internet, no API key. Run GGUF models entirely on your Android device.</p>
+            <span className={styles.cardLink}>Read guide →</span>
+          </Link>
+          <Link href="/maid/guides/ollama" className={styles.projectCard}>
+            <h3 className={shared.cardTitle}>Connect to Ollama</h3>
+            <p className={shared.cardBody}>Run a large model on your desktop and use Maid as the mobile chat interface.</p>
+            <span className={styles.cardLink}>Read guide →</span>
+          </Link>
+          <Link href="/maid/guides/openai" className={styles.projectCard}>
+            <h3 className={shared.cardTitle}>OpenAI & Compatible APIs</h3>
+            <p className={shared.cardBody}>Connect to GPT-4o or any OpenAI-compatible endpoint including LM Studio and OpenRouter.</p>
+            <span className={styles.cardLink}>Read guide →</span>
+          </Link>
+          <Link href="/maid/guides/anthropic" className={styles.projectCard}>
+            <h3 className={shared.cardTitle}>Claude via Anthropic API</h3>
+            <p className={shared.cardBody}>Access Claude Opus, Sonnet, and Haiku on Android with your own API key.</p>
+            <span className={styles.cardLink}>Read guide →</span>
+          </Link>
+        </div>
+        <div style={{ marginTop: "1rem" }}>
+          <Link href="/maid/guides" className={shared.ctaButtonSecondary}>View all guides →</Link>
+        </div>
+      </section>
+
+      <section className={shared.section}>
         <div className={shared.ctaWrapper}>
           <p className={shared.sectionIntro}>
             Maid is MIT licensed and built by contributors around the world.
