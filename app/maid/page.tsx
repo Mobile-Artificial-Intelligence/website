@@ -241,7 +241,7 @@ export default function MaidPage() {
             <span className={styles.cardLink}>Read guide →</span>
           </Link>
         </div>
-        <div style={{ marginTop: "1rem" }}>
+        <div style={{ marginTop: "4rem" }}>
           <Link href="/maid/guides" className={shared.ctaButtonSecondary}>View all guides →</Link>
         </div>
       </section>
