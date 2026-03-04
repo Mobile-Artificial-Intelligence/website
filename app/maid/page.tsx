@@ -122,6 +122,52 @@ export default function MaidPage() {
       </section>
 
       <section className={shared.section}>
+        <h2 className={shared.sectionTitle}>See It in Action</h2>
+        <div className={styles.screenshotGallery}>
+          <div className={styles.screenshotItem}>
+            <Image
+              src="/images/maid-screenshot-8.png"
+              alt="Maid chat interface on Android"
+              width={180}
+              height={400}
+              className={styles.screenshotFrame}
+            />
+            <span className={styles.screenshotCaption}>Chat interface</span>
+          </div>
+          <div className={styles.screenshotItem}>
+            <Image
+              src="/images/maid-screenshot-1.png"
+              alt="Maid showing extended AI response with reasoning"
+              width={180}
+              height={400}
+              className={styles.screenshotFrame}
+            />
+            <span className={styles.screenshotCaption}>Reasoning models</span>
+          </div>
+          <div className={styles.screenshotItem}>
+            <Image
+              src="/images/maid-screenshot-3.png"
+              alt="Maid model download screen"
+              width={180}
+              height={400}
+              className={styles.screenshotFrame}
+            />
+            <span className={styles.screenshotCaption}>One-tap downloads</span>
+          </div>
+          <div className={styles.screenshotItem}>
+            <Image
+              src="/images/maid-screenshot-4.png"
+              alt="Maid settings screen"
+              width={180}
+              height={400}
+              className={styles.screenshotFrame}
+            />
+            <span className={styles.screenshotCaption}>Configurable settings</span>
+          </div>
+        </div>
+      </section>
+
+      <section className={shared.section}>
         <h2 className={shared.sectionTitle}>Used Around the World</h2>
         <p className={shared.sectionIntro}>
           When the internet goes down — or when going online isn&apos;t safe —
