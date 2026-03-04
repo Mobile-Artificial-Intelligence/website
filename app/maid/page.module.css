@@ -52,6 +52,24 @@
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .screenshotGallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    overflow-x: visible;
+    justify-content: unset;
+  }
+
+  .screenshotItem {
+    flex: unset;
+  }
+
+  .screenshotFrame {
+    width: 100%;
+    height: auto;
+  }
+}
+
 /* Real-world use cards — left accent border variant */
 .realWorldCard {
   padding: 1.5rem;
