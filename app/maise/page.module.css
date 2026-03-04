@@ -1,3 +1,26 @@
+/* Guide / project cards — link variant with hover */
+.projectCard {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  border: 1px solid rgba(0, 225, 255, 0.25);
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.2s ease, filter 0.2s ease;
+}
+
+.projectCard:hover {
+  border-color: #00b7ff;
+  filter: drop-shadow(0 0 0.5em rgba(0, 225, 255, 0.25));
+}
+
+.cardLink {
+  font-size: 0.85rem;
+  color: #00b7ff;
+  margin-top: 1.25rem;
+}
+
 /* Language chips */
 .langList {
   display: flex;
