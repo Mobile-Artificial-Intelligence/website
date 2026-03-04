@@ -60,14 +60,6 @@ const features = [
   },
 ];
 
-const techDetails = [
-  { label: "Platform", value: "Android" },
-  { label: "Language", value: "TypeScript / React Native" },
-  { label: "Inference", value: "llama.cpp (GGUF)" },
-  { label: "License", value: "MIT" },
-  { label: "Stars", value: "2.4k+" },
-];
-
 export default function MaidPage() {
   return (
     <main className={shared.page}>
@@ -200,18 +192,6 @@ export default function MaidPage() {
             </p>
           </div>
         </div>
-      </section>
-
-      <section className={shared.section}>
-        <h2 className={shared.sectionTitle}>Technical Details</h2>
-        <dl className={shared.techList}>
-          {techDetails.map((t) => (
-            <div key={t.label} className={shared.techRow}>
-              <dt className={shared.techLabel}>{t.label}</dt>
-              <dd className={shared.techValue}>{t.value}</dd>
-            </div>
-          ))}
-        </dl>
       </section>
 
       <section className={shared.section}>

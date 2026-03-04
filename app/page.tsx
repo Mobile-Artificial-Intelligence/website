@@ -58,6 +58,32 @@ export default function Home() {
       </section>
 
       <section className={shared.section}>
+        <h2 className={shared.sectionTitle}>Guides</h2>
+        <div className={shared.grid2}>
+          <Link href="/maid/guides/llama-cpp" className={styles.projectCard}>
+            <h3 className={shared.cardTitle}>Run AI Locally on Android</h3>
+            <p className={shared.cardBody}>Run GGUF models entirely on your phone using Maid and llama.cpp — no internet, no API key.</p>
+            <span className={styles.cardLink}>Read guide →</span>
+          </Link>
+          <Link href="/maid/guides/ollama" className={styles.projectCard}>
+            <h3 className={shared.cardTitle}>Connect to Ollama</h3>
+            <p className={shared.cardBody}>Run large models on your desktop and use Maid on your phone as the chat interface.</p>
+            <span className={styles.cardLink}>Read guide →</span>
+          </Link>
+          <Link href="/maise/guides/tts-setup" className={styles.projectCard}>
+            <h3 className={shared.cardTitle}>Set Up On-Device TTS</h3>
+            <p className={shared.cardBody}>Make Maise the default voice engine for your entire Android device in a few taps.</p>
+            <span className={styles.cardLink}>Read guide →</span>
+          </Link>
+          <Link href="/maise/guides/maid-integration" className={styles.projectCard}>
+            <h3 className={shared.cardTitle}>Fully Offline AI Voice</h3>
+            <p className={shared.cardBody}>Combine Maid and Maise for local inference, local voice, and local transcription — end to end.</p>
+            <span className={styles.cardLink}>Read guide →</span>
+          </Link>
+        </div>
+      </section>
+
+      <section className={shared.section}>
         <h2 className={shared.sectionTitle}>Our Projects</h2>
         <div className={shared.grid2}>
           <Link href="/maid" className={styles.projectCard}>

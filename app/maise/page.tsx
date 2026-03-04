@@ -65,16 +65,6 @@ const features = [
   },
 ];
 
-const techDetails = [
-  { label: "Platform", value: "Android" },
-  { label: "Language", value: "Kotlin" },
-  { label: "Runtime", value: "ONNX Runtime" },
-  { label: "Audio", value: "24 kHz mono 16-bit PCM" },
-  { label: "TTS Engine", value: "Kokoro" },
-  { label: "ASR Engine", value: "Whisper" },
-  { label: "License", value: "MIT" },
-];
-
 const languages = [
   "English (US)", "English (UK)", "German", "French",
   "Greek", "Italian", "Japanese", "Portuguese", "Chinese",
@@ -140,18 +130,6 @@ export default function MaisePage() {
             <li key={lang} className={styles.langItem}>{lang}</li>
           ))}
         </ul>
-      </section>
-
-      <section className={shared.section}>
-        <h2 className={shared.sectionTitle}>Technical Details</h2>
-        <dl className={shared.techList}>
-          {techDetails.map((t) => (
-            <div key={t.label} className={shared.techRow}>
-              <dt className={shared.techLabel}>{t.label}</dt>
-              <dd className={shared.techValue}>{t.value}</dd>
-            </div>
-          ))}
-        </dl>
       </section>
 
       <section className={shared.section}>
