@@ -82,7 +82,7 @@ export default function OllamaGuidePage() {
           <p className={styles.prose}><strong>On Linux / macOS (terminal):</strong></p>
           <code className={styles.code}>OLLAMA_HOST=0.0.0.0 ollama serve</code>
           <p className={styles.prose}><strong>On Windows (PowerShell):</strong></p>
-          <code className={styles.code}>$env:OLLAMA_HOST="0.0.0.0"; ollama serve</code>
+          <code className={styles.code}>{`$env:OLLAMA_HOST="0.0.0.0"; ollama serve`}</code>
           <p className={styles.prose}>
             You also need to make sure your firewall allows inbound TCP connections on port{" "}
             <span className={styles.inlineCode}>11434</span> from your local network. On most home networks
