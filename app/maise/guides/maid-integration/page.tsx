@@ -44,7 +44,7 @@ export default function MaidIntegrationGuidePage() {
             to text. Together, they form a complete AI assistant pipeline where nothing leaves
             your device:
           </p>
-          <ul style={{ fontFamily: "var(--font-space-mono)", fontSize: "0.85rem", lineHeight: 1.9, opacity: 0.8, paddingLeft: "1.5rem", marginBottom: "1.25rem" }}>
+          <ul style={{ fontSize: "0.85rem", lineHeight: 1.9, opacity: 0.8, paddingLeft: "1.5rem", marginBottom: "1.25rem" }}>
             <li><strong>You speak</strong> — Maise transcribes your voice using distil-Whisper (on-device).</li>
             <li><strong>Maid thinks</strong> — The local LLM generates a response using llama.cpp (on-device).</li>
             <li><strong>Maise speaks</strong> — The response is read aloud using a Kokoro voice (on-device).</li>
@@ -56,7 +56,7 @@ export default function MaidIntegrationGuidePage() {
 
         <div className={styles.section}>
           <h2 className={styles.sectionTitle}>Requirements</h2>
-          <ul style={{ fontFamily: "var(--font-space-mono)", fontSize: "0.85rem", lineHeight: 1.9, opacity: 0.8, paddingLeft: "1.5rem", margin: 0 }}>
+          <ul style={{ fontSize: "0.85rem", lineHeight: 1.9, opacity: 0.8, paddingLeft: "1.5rem", margin: 0 }}>
             <li><strong>Maise</strong> installed and configured as the system TTS engine (see <Link href="/maise/guides/tts-setup" style={{ color: "#00b7ff" }}>TTS Setup</Link>).</li>
             <li><strong>Maid</strong> installed with a local GGUF model loaded via the Llama provider (see <Link href="/maid/guides/llama-cpp" style={{ color: "#00b7ff" }}>llama.cpp guide</Link>).</li>
             <li>Both apps installed on the same device.</li>
@@ -179,7 +179,7 @@ export default function MaidIntegrationGuidePage() {
             text-only use. Shorter responses feel more natural when spoken aloud, and
             faster models mean less waiting between speaking and hearing the reply.
           </p>
-          <ul style={{ fontFamily: "var(--font-space-mono)", fontSize: "0.85rem", lineHeight: 1.9, opacity: 0.8, paddingLeft: "1.5rem", margin: 0 }}>
+          <ul style={{ fontSize: "0.85rem", lineHeight: 1.9, opacity: 0.8, paddingLeft: "1.5rem", margin: 0 }}>
             <li><strong>Best balance</strong> — Gemma 2 2B or Qwen2.5 1.5B at Q4_K_M. Fast enough for natural back-and-forth.</li>
             <li><strong>Lower-end devices</strong> — TinyLlama 1.1B or Gemma 3 1B. Very fast, shorter responses.</li>
             <li><strong>Flagship phones</strong> — Qwen3 4B or Llama 3.2 3B for better quality while still being usable in conversation.</li>

@@ -43,7 +43,6 @@
 
 /* In-section intro paragraph — full width */
 .sectionIntro {
-  font-family: 'Space Mono', monospace;
   font-size: 0.9rem;
   line-height: 1.8;
   opacity: 0.8;
@@ -69,7 +68,6 @@
 
 /* ─── Buttons ───────────────────────────────────────────────── */
 .ctaButton {
-  font-family: 'Space Mono', monospace;
   font-size: 0.9rem;
   padding: 0.6rem 1.4rem;
   border: 1px solid #00b7ff;
@@ -86,7 +84,6 @@
 }
 
 .ctaButtonSecondary {
-  font-family: 'Space Mono', monospace;
   font-size: 0.9rem;
   padding: 0.6rem 1.4rem;
   border: 1px solid rgba(0, 225, 255, 0.35);
@@ -129,8 +126,7 @@
 }
 
 .cardBody {
-  font-family: 'Space Mono', monospace;
-  font-size: 0.78rem;
+  font-size: 0.88rem;
   line-height: 1.7;
   opacity: 0.75;
 }
@@ -159,7 +155,6 @@
 .techRow {
   display: flex;
   gap: 1rem;
-  font-family: 'Space Mono', monospace;
   font-size: 0.85rem;
   border-bottom: 1px solid rgba(0, 225, 255, 0.1);
   padding-bottom: 0.5rem;

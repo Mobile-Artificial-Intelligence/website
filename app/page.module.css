@@ -27,7 +27,6 @@
 
 /* Mission intro paragraph */
 .introText {
-  font-family: 'Space Mono', monospace;
   font-size: 0.9rem;
   line-height: 1.8;
   opacity: 0.85;
@@ -52,8 +51,7 @@
 }
 
 .cardLink {
-  font-family: 'Space Mono', monospace;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   color: #00b7ff;
   margin-top: 1.25rem;
 }

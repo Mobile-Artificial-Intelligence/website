@@ -142,7 +142,7 @@ export default function TtsSetupGuidePage() {
           <p className={styles.prose}>
             Once Maise is the preferred engine, the following all use it automatically:
           </p>
-          <ul style={{ fontFamily: "var(--font-space-mono)", fontSize: "0.85rem", lineHeight: 1.9, opacity: 0.8, paddingLeft: "1.5rem", margin: 0 }}>
+          <ul style={{ fontSize: "0.85rem", lineHeight: 1.9, opacity: 0.8, paddingLeft: "1.5rem", margin: 0 }}>
             <li><strong>Maid</strong> — AI responses are spoken using the voice you selected in Maise.</li>
             <li><strong>Navigation apps</strong> — Turn-by-turn directions use Maise voices.</li>
             <li><strong>Accessibility</strong> — Screen readers and TTS-based accessibility features use Maise.</li>
@@ -153,17 +153,17 @@ export default function TtsSetupGuidePage() {
         <div className={styles.section}>
           <h2 className={styles.sectionTitle}>Troubleshooting</h2>
           <p className={styles.prose}><strong>Maise does not appear in the engine list</strong></p>
-          <ul style={{ fontFamily: "var(--font-space-mono)", fontSize: "0.85rem", lineHeight: 1.9, opacity: 0.8, paddingLeft: "1.5rem", marginBottom: "1.25rem" }}>
+          <ul style={{ fontSize: "0.85rem", lineHeight: 1.9, opacity: 0.8, paddingLeft: "1.5rem", marginBottom: "1.25rem" }}>
             <li>Make sure Maise is installed and has been opened at least once.</li>
             <li>Try force-stopping Maise and opening it again, then check the TTS settings.</li>
           </ul>
           <p className={styles.prose}><strong>No audio plays after switching to Maise</strong></p>
-          <ul style={{ fontFamily: "var(--font-space-mono)", fontSize: "0.85rem", lineHeight: 1.9, opacity: 0.8, paddingLeft: "1.5rem", marginBottom: "1.25rem" }}>
+          <ul style={{ fontSize: "0.85rem", lineHeight: 1.9, opacity: 0.8, paddingLeft: "1.5rem", marginBottom: "1.25rem" }}>
             <li>Open the Maise app and use the <strong>Speak</strong> button on the TTS tab to confirm Maise itself works.</li>
             <li>Check that the device volume is not muted.</li>
           </ul>
           <p className={styles.prose}><strong>Another app is still using Google TTS</strong></p>
-          <ul style={{ fontFamily: "var(--font-space-mono)", fontSize: "0.85rem", lineHeight: 1.9, opacity: 0.8, paddingLeft: "1.5rem", margin: 0 }}>
+          <ul style={{ fontSize: "0.85rem", lineHeight: 1.9, opacity: 0.8, paddingLeft: "1.5rem", margin: 0 }}>
             <li>Some apps (notably Google Assistant and Google Maps) bypass the system engine and use their own bundled TTS. This is expected behaviour and cannot be changed.</li>
           </ul>
         </div>

@@ -126,7 +126,7 @@ export default function VoicesGuidePage() {
           {voiceGroups.map((group) => (
             <div key={group.language} style={{ marginBottom: "2rem" }}>
               <h3 style={{ color: "#00b7ff", fontSize: "1rem", marginBottom: "0.75rem", fontWeight: 600 }}>
-                {group.language} <span style={{ opacity: 0.5, fontWeight: 400, fontFamily: "var(--font-space-mono)", fontSize: "0.8rem" }}>({group.code})</span>
+                {group.language} <span style={{ opacity: 0.5, fontWeight: 400, fontSize: "0.8rem" }}>({group.code})</span>
               </h3>
               <div style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem" }}>
                 {group.voices.map((voice) => (

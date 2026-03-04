@@ -159,18 +159,18 @@ export default function OllamaGuidePage() {
         <div className={styles.section}>
           <h2 className={styles.sectionTitle}>Troubleshooting</h2>
           <p className={styles.prose}><strong>Find Ollama finds nothing</strong></p>
-          <ul style={{ fontFamily: "var(--font-space-mono)", fontSize: "0.85rem", lineHeight: 1.9, opacity: 0.8, paddingLeft: "1.5rem", marginBottom: "1.25rem" }}>
+          <ul style={{ fontSize: "0.85rem", lineHeight: 1.9, opacity: 0.8, paddingLeft: "1.5rem", marginBottom: "1.25rem" }}>
             <li>Confirm Ollama is running with <span className={styles.inlineCode}>OLLAMA_HOST=0.0.0.0</span>.</li>
             <li>Check that the firewall on the server allows port 11434.</li>
             <li>Make sure both devices are on the same Wi-Fi network (not guest vs. main).</li>
           </ul>
           <p className={styles.prose}><strong>Model dropdown is empty after setting the Base URL</strong></p>
-          <ul style={{ fontFamily: "var(--font-space-mono)", fontSize: "0.85rem", lineHeight: 1.9, opacity: 0.8, paddingLeft: "1.5rem", marginBottom: "1.25rem" }}>
+          <ul style={{ fontSize: "0.85rem", lineHeight: 1.9, opacity: 0.8, paddingLeft: "1.5rem", marginBottom: "1.25rem" }}>
             <li>Run <span className={styles.inlineCode}>ollama list</span> on the server to confirm you have models pulled.</li>
             <li>Pull at least one model with <span className={styles.inlineCode}>ollama pull &lt;model-name&gt;</span>.</li>
           </ul>
           <p className={styles.prose}><strong>Slow responses</strong></p>
-          <ul style={{ fontFamily: "var(--font-space-mono)", fontSize: "0.85rem", lineHeight: 1.9, opacity: 0.8, paddingLeft: "1.5rem", margin: 0 }}>
+          <ul style={{ fontSize: "0.85rem", lineHeight: 1.9, opacity: 0.8, paddingLeft: "1.5rem", margin: 0 }}>
             <li>The bottleneck is almost always the server, not the network. Try a smaller model or one that fits fully in your GPU VRAM.</li>
             <li>Check server CPU/GPU utilization with <span className={styles.inlineCode}>htop</span> or your GPU monitoring tool.</li>
           </ul>

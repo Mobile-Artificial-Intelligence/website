@@ -70,7 +70,7 @@ export default function MaiseGuidesIndexPage() {
           {guides.map((g) => (
             <Link key={g.href} href={g.href} style={{ textDecoration: "none" }}>
               <div className={shared.card} style={{ height: "100%", cursor: "pointer", transition: "border-color 0.2s ease" }}>
-                <p style={{ fontFamily: "var(--font-space-mono)", fontSize: "0.7rem", color: "#00b7ff", opacity: 0.7, marginBottom: "0.5rem" }}>
+                <p style={{ fontSize: "0.7rem", color: "#00b7ff", opacity: 0.7, marginBottom: "0.5rem" }}>
                   {g.tag}
                 </p>
                 <h2 className={shared.cardTitle} style={{ fontSize: "1rem", marginBottom: "0.6rem" }}>{g.title}</h2>

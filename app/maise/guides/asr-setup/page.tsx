@@ -40,7 +40,7 @@ export default function AsrSetupGuidePage() {
           <p className={styles.prose}>
             Maise provides two ways to use on-device speech recognition on Android:
           </p>
-          <ul style={{ fontFamily: "var(--font-space-mono)", fontSize: "0.85rem", lineHeight: 1.9, opacity: 0.8, paddingLeft: "1.5rem", marginBottom: "1.25rem" }}>
+          <ul style={{ fontSize: "0.85rem", lineHeight: 1.9, opacity: 0.8, paddingLeft: "1.5rem", marginBottom: "1.25rem" }}>
             <li>
               <strong>System speech recognizer</strong> — Registers Maise as Android&apos;s
               preferred <span className={styles.inlineCode}>RecognitionService</span>. Apps that call
@@ -170,16 +170,16 @@ export default function AsrSetupGuidePage() {
         <div className={styles.section}>
           <h2 className={styles.sectionTitle}>Troubleshooting</h2>
           <p className={styles.prose}><strong>Status stays on &quot;Loading model…&quot; for a long time</strong></p>
-          <ul style={{ fontFamily: "var(--font-space-mono)", fontSize: "0.85rem", lineHeight: 1.9, opacity: 0.8, paddingLeft: "1.5rem", marginBottom: "1.25rem" }}>
+          <ul style={{ fontSize: "0.85rem", lineHeight: 1.9, opacity: 0.8, paddingLeft: "1.5rem", marginBottom: "1.25rem" }}>
             <li>The Whisper model loads from storage on first use. On slower devices this can take 5–10 seconds. Subsequent loads are faster.</li>
           </ul>
           <p className={styles.prose}><strong>Shows &quot;(no speech detected)&quot;</strong></p>
-          <ul style={{ fontFamily: "var(--font-space-mono)", fontSize: "0.85rem", lineHeight: 1.9, opacity: 0.8, paddingLeft: "1.5rem", marginBottom: "1.25rem" }}>
+          <ul style={{ fontSize: "0.85rem", lineHeight: 1.9, opacity: 0.8, paddingLeft: "1.5rem", marginBottom: "1.25rem" }}>
             <li>Make sure the microphone permission is granted to Maise in Android Settings → Apps → Maise → Permissions.</li>
             <li>Speak clearly and within range of the microphone. Background noise can interfere with VAD.</li>
           </ul>
           <p className={styles.prose}><strong>Maise does not appear as a keyboard option</strong></p>
-          <ul style={{ fontFamily: "var(--font-space-mono)", fontSize: "0.85rem", lineHeight: 1.9, opacity: 0.8, paddingLeft: "1.5rem", margin: 0 }}>
+          <ul style={{ fontSize: "0.85rem", lineHeight: 1.9, opacity: 0.8, paddingLeft: "1.5rem", margin: 0 }}>
             <li>Make sure you enabled Maise in <strong>Manage keyboards</strong> (step 3 above).</li>
             <li>The keyboard switcher icon only appears in text fields — look for it when your keyboard is open.</li>
           </ul>

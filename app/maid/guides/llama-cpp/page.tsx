@@ -200,7 +200,7 @@ export default function LlamaCppGuidePage() {
             Local inference is CPU-bound on most Android devices. Here are a few things that
             help get the best performance:
           </p>
-          <ul style={{ fontFamily: "var(--font-space-mono)", fontSize: "0.85rem", lineHeight: 1.9, opacity: 0.8, paddingLeft: "1.5rem", margin: 0 }}>
+          <ul style={{ fontSize: "0.85rem", lineHeight: 1.9, opacity: 0.8, paddingLeft: "1.5rem", margin: 0 }}>
             <li>Close background apps before loading a model to free up RAM.</li>
             <li>Start with Q4_K_M before trying larger quantizations.</li>
             <li>1B and 2B models will run noticeably faster than 3B–4B models on mid-range hardware.</li>
