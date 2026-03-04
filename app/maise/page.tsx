@@ -155,6 +155,42 @@ export default function MaisePage() {
       </section>
 
       <section className={shared.section}>
+        <h2 className={shared.sectionTitle}>Guides</h2>
+        <p className={shared.sectionIntro}>
+          Step-by-step guides for setting up and getting the most from Maise.
+        </p>
+        <div className={shared.grid2}>
+          <Link href="/maise/guides/tts-setup" style={{ textDecoration: "none" }}>
+            <div className={shared.card}>
+              <h3 className={shared.cardTitle}>Set Up System TTS</h3>
+              <p className={shared.cardBody}>Make Maise the default voice engine for your entire Android device in a few taps.</p>
+            </div>
+          </Link>
+          <Link href="/maise/guides/asr-setup" style={{ textDecoration: "none" }}>
+            <div className={shared.card}>
+              <h3 className={shared.cardTitle}>Set Up Speech Recognition</h3>
+              <p className={shared.cardBody}>Enable offline voice dictation in any app using Whisper-powered on-device ASR.</p>
+            </div>
+          </Link>
+          <Link href="/maise/guides/maid-integration" style={{ textDecoration: "none" }}>
+            <div className={shared.card}>
+              <h3 className={shared.cardTitle}>Use Maise with Maid</h3>
+              <p className={shared.cardBody}>Combine local TTS and ASR with Maid&apos;s on-device AI for a fully offline assistant.</p>
+            </div>
+          </Link>
+          <Link href="/maise/guides/voices" style={{ textDecoration: "none" }}>
+            <div className={shared.card}>
+              <h3 className={shared.cardTitle}>Voices & Languages</h3>
+              <p className={shared.cardBody}>Browse all 68 Kokoro voices across 9 languages and learn how to preview them.</p>
+            </div>
+          </Link>
+        </div>
+        <div style={{ marginTop: "1rem" }}>
+          <Link href="/maise/guides" className={shared.ctaButtonSecondary}>View all guides →</Link>
+        </div>
+      </section>
+
+      <section className={shared.section}>
         <div className={shared.ctaWrapper}>
           <p className={shared.sectionIntro}>
             Maise is MIT licensed and actively developed. v1.0.0 released
