@@ -81,7 +81,7 @@ export default function MaidPage() {
         </p>
         <div className={shared.heroCta}>
           <Link
-            href="https://play.google.com/store/apps/details?id=com.danemadsen.maid&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+            href="https://play.google.com/store/apps/details?id=com.danemadsen.maid"
             target="_blank"
             rel="noopener noreferrer"
           >

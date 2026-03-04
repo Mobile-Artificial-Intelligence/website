@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 import styles from "./page.module.css";
 import shared from "@/app/shared.module.css";
@@ -92,20 +93,30 @@ export default function MaisePage() {
         </p>
         <div className={shared.heroCta}>
           <Link
-            href="https://github.com/Mobile-Artificial-Intelligence/maise"
-            className={shared.ctaButton}
+            href="https://play.google.com/store/apps/details?id=com.danemadsen.maise"
             target="_blank"
             rel="noopener noreferrer"
           >
-            View on GitHub
+            <Image
+              src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+              alt="Get it on Google Play"
+              width={200}
+              height={77}
+              className={styles.badge}
+            />
           </Link>
           <Link
-            href="https://github.com/Mobile-Artificial-Intelligence/maise/releases"
-            className={shared.ctaButtonSecondary}
+            href="https://github.com/Mobile-Artificial-Intelligence/maise/releases/latest"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Download APK
+            <Image
+              src="https://raw.githubusercontent.com/NeoApplications/Neo-Backup/refs/heads/main/badge_github.png"
+              alt="Download from GitHub"
+              width={200}
+              height={77}
+              className={styles.badge}
+            />
           </Link>
         </div>
       </section>
