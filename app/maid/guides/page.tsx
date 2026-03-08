@@ -55,6 +55,18 @@ const guides = [
     description: "Connect Maid to Mistral AI's cloud API. Covers Mistral Large, Mistral Small, and Codestral, plus custom base URL support for self-hosted Mistral-compatible servers.",
     tag: "Cloud · Mistral",
   },
+  {
+    href: "/maid/guides/llama-cpp-vision",
+    title: "Vision Models with llama.cpp",
+    description: "Send images to a vision-capable AI model running entirely on your Android device. Covers loading a multimodal projector file alongside a GGUF vision model for fully offline image understanding.",
+    tag: "Local inference · Vision",
+  },
+  {
+    href: "/maid/guides/ollama-vision",
+    title: "Vision Models with Ollama",
+    description: "Use Maid to send images to a vision-capable model running on your desktop via Ollama. Vision support is automatic — just pull a compatible model like llama3.2-vision or llava.",
+    tag: "Self-hosted · Vision",
+  },
 ];
 
 export default function GuidesIndexPage() {
