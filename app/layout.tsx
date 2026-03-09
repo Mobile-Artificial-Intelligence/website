@@ -81,6 +81,7 @@ export default function RootLayout({
             <div id='link-group'>
                 <Link href="/maid">Maid</Link>
                 <Link href="/maise">Maise</Link>
+                <Link href="/babylon">Babylon</Link>
                 <Link href="https://github.com/orgs/Mobile-Artificial-Intelligence/repositories">GitHub</Link>
             </div>
         </header>

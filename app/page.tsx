@@ -102,6 +102,14 @@ export default function Home() {
             </p>
             <span className={styles.cardLink}>Learn more →</span>
           </Link>
+          <Link href="/babylon" className={styles.projectCard}>
+            <h3 className={shared.cardTitle}>Babylon.cpp</h3>
+            <p className={shared.cardBody}>
+              A cross-platform C/C++ library for local G2P and neural TTS.
+              Kokoro (54+ voices), VITS/Piper, REST API, and Python bindings.
+            </p>
+            <span className={styles.cardLink}>Learn more →</span>
+          </Link>
         </div>
       </section>
     </main>

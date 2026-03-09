@@ -1,0 +1,166 @@
+.guideHero {
+  padding: 4rem 3rem 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.breadcrumb {
+  font-size: 0.75rem;
+  opacity: 0.6;
+  margin-bottom: 1.5rem;
+}
+
+.breadcrumb a {
+  color: #00b7ff;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.guideTitle {
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.guideSubtitle {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.9rem;
+  opacity: 0.75;
+  line-height: 1.8;
+  max-width: 720px;
+}
+
+.body {
+  padding: 0 3rem 6rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.section {
+  margin-bottom: 3rem;
+}
+
+.sectionTitle {
+  font-size: 1.4rem;
+  color: #00b7ff;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(0, 225, 255, 0.15);
+}
+
+.prose {
+  font-size: 0.9rem;
+  line-height: 1.9;
+  opacity: 0.8;
+  margin-bottom: 1.25rem;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.step {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+}
+
+.stepNumber {
+  flex: 0 0 auto;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 1px solid #00b7ff;
+  color: #00b7ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  margin-top: 2px;
+}
+
+.stepContent {
+  flex: 1;
+  font-size: 0.9rem;
+  line-height: 1.8;
+  opacity: 0.8;
+}
+
+.stepContent strong {
+  color: #fff;
+  opacity: 1;
+}
+
+.code {
+  display: block;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(0, 225, 255, 0.15);
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.8rem;
+  color: #00e1ff;
+  margin: 1rem 0;
+  overflow-x: auto;
+  white-space: pre;
+}
+
+.inlineCode {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.8rem;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 3px;
+  padding: 0.1em 0.35em;
+  color: #00e1ff;
+}
+
+.note {
+  padding: 1rem 1.25rem;
+  border-left: 3px solid #00b7ff;
+  border-radius: 0 6px 6px 0;
+  background: rgba(0, 183, 255, 0.05);
+  font-size: 0.875rem;
+  line-height: 1.8;
+  opacity: 0.85;
+  margin: 1.5rem 0;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  margin: 1.5rem 0;
+}
+
+.table th {
+  color: #00b7ff;
+  text-align: left;
+  padding: 0.6rem 1rem;
+  border-bottom: 1px solid rgba(0, 225, 255, 0.3);
+}
+
+.table td {
+  padding: 0.6rem 1rem;
+  border-bottom: 1px solid rgba(0, 225, 255, 0.1);
+  opacity: 0.8;
+}
+
+.table tr:last-child td {
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  .guideHero,
+  .body {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .guideTitle {
+    font-size: 1.75rem;
+  }
+}
