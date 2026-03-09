@@ -1,0 +1,78 @@
+name: Sync Manuals
+
+on:
+  repository_dispatch:
+    types: [maid-manual-built, maise-manual-built, babylon-manual-built]
+  workflow_dispatch:
+    inputs:
+      project:
+        description: 'Project to sync'
+        required: true
+        type: choice
+        options: [maid, maise, babylon]
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Resolve project config
+        id: config
+        run: |
+          if [ "${{ github.event_name }}" = "repository_dispatch" ]; then
+            case "${{ github.event.action }}" in
+              maid-manual-built)    PROJECT=maid    ;;
+              maise-manual-built)   PROJECT=maise   ;;
+              babylon-manual-built) PROJECT=babylon ;;
+            esac
+            RUN_ID="${{ github.event.client_payload.run_id }}"
+          else
+            PROJECT="${{ inputs.project }}"
+            RUN_ID=$(gh api \
+              "repos/Mobile-Artificial-Intelligence/$PROJECT/actions/runs?status=success&per_page=10" \
+              --jq '[.workflow_runs[] | select(.name == "Build Manual")] | .[0].id')
+          fi
+          echo "project=$PROJECT"       >> $GITHUB_OUTPUT
+          echo "run_id=$RUN_ID"         >> $GITHUB_OUTPUT
+          echo "artifact=${PROJECT}-manual" >> $GITHUB_OUTPUT
+          echo "dest=public/docs/${PROJECT}-manual.pdf" >> $GITHUB_OUTPUT
+        env:
+          GH_TOKEN: ${{ secrets.ORGANIZATION_TOKEN }}
+
+      - name: Download artifact
+        run: |
+          mkdir -p public/docs
+          ARTIFACT_ID=$(gh api \
+            "repos/Mobile-Artificial-Intelligence/${PROJECT}/actions/runs/${RUN_ID}/artifacts" \
+            --jq ".artifacts[] | select(.name == \"${ARTIFACT_NAME}\") | .id")
+          curl -fsSL \
+            -H "Authorization: Bearer ${GH_TOKEN}" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/Mobile-Artificial-Intelligence/${PROJECT}/actions/artifacts/${ARTIFACT_ID}/zip" \
+            -o artifact.zip
+          unzip -o artifact.zip -d /tmp/artifact/
+          cp /tmp/artifact/manual.pdf "${DEST}"
+        env:
+          GH_TOKEN: ${{ secrets.ORGANIZATION_TOKEN }}
+          PROJECT: ${{ steps.config.outputs.project }}
+          RUN_ID: ${{ steps.config.outputs.run_id }}
+          ARTIFACT_NAME: ${{ steps.config.outputs.artifact }}
+          DEST: ${{ steps.config.outputs.dest }}
+
+      - name: Commit PDF
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add "${{ steps.config.outputs.dest }}"
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update ${{ steps.config.outputs.project }} manual PDF"
+            git push
+          fi

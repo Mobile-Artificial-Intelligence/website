@@ -200,6 +200,9 @@ make cli`}</pre>
           >
             Contribute on GitHub →
           </Link>
+          <div className={shared.heroCta} style={{ justifyContent: 'flex-start', marginTop: 0 }}>
+            <Link href="/docs/babylon-manual.pdf" className={shared.ctaButtonSecondary} target="_blank" rel="noopener noreferrer">User Manual (PDF)</Link>
+          </div>
         </div>
       </section>
     </main>

@@ -181,6 +181,7 @@ export default function MaisePage() {
           <div className={shared.heroCta} style={{ justifyContent: 'flex-start', marginTop: 0 }}>
             <Link href="/maise/privacy" className={shared.ctaButtonSecondary}>Privacy Policy</Link>
             <Link href="/maise/terms" className={shared.ctaButtonSecondary}>Terms &amp; Conditions</Link>
+            <Link href="/docs/maise-manual.pdf" className={shared.ctaButtonSecondary} target="_blank" rel="noopener noreferrer">User Manual (PDF)</Link>
           </div>
         </div>
       </section>
