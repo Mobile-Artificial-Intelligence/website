@@ -33,37 +33,38 @@
   margin-bottom: 2.5rem;
 }
 
-/* Maid image card */
-.maidCard {
+/* Project image cards (Maid, Maise) */
+.imageCard {
   display: block;
   text-decoration: none;
   color: inherit;
+  margin-bottom: 1.5rem;
 }
 
-.maidImageWrapper {
+.imageWrapper {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 12;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
   border-radius: 8px;
 }
 
-.maidImage {
+.image {
   object-fit: cover;
   object-position: center center;
   border-radius: 8px;
   transition: transform 0.3s ease;
 }
 
-.maidCard:hover .maidImage {
+.imageCard:hover .image {
   transform: scale(1.04);
 }
 
-.maidCardContent {
+.imageContent {
   padding: 1rem 0.25rem 0;
 }
 
-.maidCardTitle {
+.imageTitle {
   font-size: 1.3rem;
   color: #00e1ff;
   margin-bottom: 0.5rem;
@@ -71,7 +72,7 @@
 }
 
 @media (max-width: 768px) {
-  .maidImageWrapper {
+  .imageWrapper {
     aspect-ratio: 3 / 4;
   }
 }
