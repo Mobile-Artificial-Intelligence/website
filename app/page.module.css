@@ -38,7 +38,7 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 1.5rem;
-  align-items: start;
+  align-items: stretch;
 }
 
 .projectsSide {
@@ -57,6 +57,18 @@
   display: block;
   text-decoration: none;
   color: inherit;
+}
+
+/* Main featured card (direct child of grid) fills full column height */
+.projectsGrid > .imageCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.projectsGrid > .imageCard .imageWrapper {
+  aspect-ratio: unset;
+  flex: 1;
+  min-height: 200px;
 }
 
 .imageWrapper {
@@ -99,12 +111,17 @@
     gap: 6rem;
   }
 
-  .projectsSide .imageWrapper {
+  .imageWrapper {
     aspect-ratio: 3 / 4;
   }
 
-  .imageWrapper {
+  .projectsGrid > .imageCard {
+    display: block;
+  }
+
+  .projectsGrid > .imageCard .imageWrapper {
     aspect-ratio: 3 / 4;
+    flex: unset;
   }
 }
 
