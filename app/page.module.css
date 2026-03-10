@@ -33,12 +33,30 @@
   margin-bottom: 2.5rem;
 }
 
-/* Project image cards (Maid, Maise) */
+/* Projects asymmetric grid (OpenAI-style) */
+.projectsGrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.projectsSide {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Narrower side cards get a taller aspect ratio on desktop */
+.projectsSide .imageWrapper {
+  aspect-ratio: 4 / 3;
+}
+
+/* Project image cards */
 .imageCard {
   display: block;
   text-decoration: none;
   color: inherit;
-  margin-bottom: 6rem;
 }
 
 .imageWrapper {
@@ -72,6 +90,19 @@
 }
 
 @media (max-width: 768px) {
+  .projectsGrid {
+    grid-template-columns: 1fr;
+    gap: 6rem;
+  }
+
+  .projectsSide {
+    gap: 6rem;
+  }
+
+  .projectsSide .imageWrapper {
+    aspect-ratio: 3 / 4;
+  }
+
   .imageWrapper {
     aspect-ratio: 3 / 4;
   }

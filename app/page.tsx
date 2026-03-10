@@ -37,48 +37,52 @@ export default function Home() {
       </section>
 
       <section className={shared.section}>
-        <Link href="/maid" className={styles.imageCard}>
-          <div className={styles.imageWrapper}>
-            <Image
-              src="/images/maid-graphic.png"
-              alt="Maid AI Chat App"
-              fill
-              className={styles.image}
-            />
+        <div className={styles.projectsGrid}>
+          <Link href="/maid" className={styles.imageCard}>
+            <div className={styles.imageWrapper}>
+              <Image
+                src="/images/maid-graphic.png"
+                alt="Maid AI Chat App"
+                fill
+                className={styles.image}
+              />
+            </div>
+            <div className={styles.imageContent}>
+              <h3 className={styles.imageTitle}>Mobile Artificial Intelligence Distribution</h3>
+              <p className={shared.cardBody}>A fully-featured Android AI chat app. Run GGUF models locally via llama.cpp, or connect to Ollama, OpenAI, Anthropic, and more.</p>
+            </div>
+          </Link>
+          <div className={styles.projectsSide}>
+            <Link href="/maise" className={styles.imageCard}>
+              <div className={styles.imageWrapper}>
+                <Image
+                  src="/images/maise-graphic.png"
+                  alt="Maise On-Device Speech"
+                  fill
+                  className={styles.image}
+                />
+              </div>
+              <div className={styles.imageContent}>
+                <h3 className={styles.imageTitle}>On-Device Android Speech Engine</h3>
+                <p className={shared.cardBody}>40+ Kokoro voices, 9 languages, Whisper ASR — all running locally via ONNX Runtime. No internet required.</p>
+              </div>
+            </Link>
+            <Link href="/babylon" className={styles.imageCard}>
+              <div className={styles.imageWrapper}>
+                <Image
+                  src="/images/babylon-graphic.png"
+                  alt="Babylon.cpp TTS Library"
+                  fill
+                  className={styles.image}
+                />
+              </div>
+              <div className={styles.imageContent}>
+                <h3 className={styles.imageTitle}>Local G2P and Neural TTS Library</h3>
+                <p className={shared.cardBody}>A cross-platform C/C++ library for local G2P and neural TTS. Kokoro (54+ voices), VITS/Piper, REST API, and Python bindings.</p>
+              </div>
+            </Link>
           </div>
-          <div className={styles.imageContent}>
-            <h3 className={styles.imageTitle}>Mobile Artificial Intelligence Distribution</h3>
-            <p className={shared.cardBody}>A fully-featured Android AI chat app. Run GGUF models locally via llama.cpp, or connect to Ollama, OpenAI, Anthropic, and more.</p>
-          </div>
-        </Link>
-        <Link href="/maise" className={styles.imageCard}>
-          <div className={styles.imageWrapper}>
-            <Image
-              src="/images/maise-graphic.png"
-              alt="Maise On-Device Speech"
-              fill
-              className={styles.image}
-            />
-          </div>
-          <div className={styles.imageContent}>
-            <h3 className={styles.imageTitle}>On-Device Android Speech Engine</h3>
-            <p className={shared.cardBody}>40+ Kokoro voices, 9 languages, Whisper ASR — all running locally via ONNX Runtime. No internet required.</p>
-          </div>
-        </Link>
-        <Link href="/babylon" className={styles.imageCard}>
-          <div className={styles.imageWrapper}>
-            <Image
-              src="/images/babylon-graphic.png"
-              alt="Babylon.cpp TTS Library"
-              fill
-              className={styles.image}
-            />
-          </div>
-          <div className={styles.imageContent}>
-            <h3 className={styles.imageTitle}>Local G2P and Neural TTS Library</h3>
-            <p className={shared.cardBody}>A cross-platform C/C++ library for local G2P and neural TTS. Kokoro (54+ voices), VITS/Piper, REST API, and Python bindings.</p>
-          </div>
-        </Link>
+        </div>
       </section>
 
       <section className={shared.section}>
