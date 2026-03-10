@@ -33,6 +33,55 @@
   margin-bottom: 2.5rem;
 }
 
+/* Maid image card */
+.maidCard {
+  display: block;
+  border: 1px solid rgba(0, 225, 255, 0.2);
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+  overflow: hidden;
+  transition: border-color 0.2s ease;
+}
+
+.maidCard:hover {
+  border-color: #00b7ff;
+}
+
+.maidImageWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 7;
+  overflow: hidden;
+}
+
+.maidImage {
+  object-fit: cover;
+  object-position: center 20%;
+  transition: transform 0.3s ease;
+}
+
+.maidCard:hover .maidImage {
+  transform: scale(1.04);
+}
+
+.maidCardContent {
+  padding: 1.25rem;
+}
+
+.maidCardTitle {
+  font-size: 1.3rem;
+  color: #00e1ff;
+  margin-bottom: 0.5rem;
+  font-family: 'Geist', sans-serif;
+}
+
+@media (max-width: 768px) {
+  .maidImageWrapper {
+    aspect-ratio: 3 / 4;
+  }
+}
+
 /* Guide / project cards */
 .projectCard {
   display: block;

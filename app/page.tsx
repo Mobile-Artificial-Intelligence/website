@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 import styles from "@/app/page.module.css";
 import shared from "@/app/shared.module.css";
@@ -31,6 +32,42 @@ export default function Home() {
         <h1>Mobile + AI</h1>
         <p className={styles.tagline}>Artificial Intelligence on the Edge</p>
         <p className={styles.tagline}>Brisbane, Australia</p>
+      </section>
+
+      <section className={shared.section}>
+        <h2 className={shared.sectionTitle}>Our Projects</h2>
+        <Link href="/maid" className={styles.maidCard}>
+          <div className={styles.maidImageWrapper}>
+            <Image
+              src="/images/maid-graphic.png"
+              alt="Maid AI Chat App"
+              fill
+              className={styles.maidImage}
+            />
+          </div>
+          <div className={styles.maidCardContent}>
+            <h3 className={styles.maidCardTitle}>Mobile Artificial Intelligence Distribution</h3>
+            <p className={shared.cardBody}>A fully-featured Android AI chat app. Run GGUF models locally via llama.cpp, or connect to Ollama, OpenAI, Anthropic, and more.</p>
+          </div>
+        </Link>
+        <div className={shared.grid2} style={{ marginTop: "1.5rem" }}>
+          <Link href="/maise" className={styles.projectCard}>
+            <h3 className={shared.cardTitle}>Maise</h3>
+            <p className={shared.cardBody}>
+              An on-device Android text-to-speech engine with 40+ voices across
+              9 languages, powered by ONNX Runtime. No internet required.
+            </p>
+            <span className={styles.cardLink}>Learn more →</span>
+          </Link>
+          <Link href="/babylon" className={styles.projectCard}>
+            <h3 className={shared.cardTitle}>Babylon.cpp</h3>
+            <p className={shared.cardBody}>
+              A cross-platform C/C++ library for local G2P and neural TTS.
+              Kokoro (54+ voices), VITS/Piper, REST API, and Python bindings.
+            </p>
+            <span className={styles.cardLink}>Learn more →</span>
+          </Link>
+        </div>
       </section>
 
       <section className={shared.section}>
@@ -79,36 +116,6 @@ export default function Home() {
             <h3 className={shared.cardTitle}>Fully Offline AI Voice</h3>
             <p className={shared.cardBody}>Combine Maid and Maise for local inference, local voice, and local transcription — end to end.</p>
             <span className={styles.cardLink}>Read guide →</span>
-          </Link>
-        </div>
-      </section>
-
-      <section className={shared.section}>
-        <h2 className={shared.sectionTitle}>Our Projects</h2>
-        <div className={shared.grid2}>
-          <Link href="/maid" className={styles.projectCard}>
-            <h3 className={shared.cardTitle}>Maid</h3>
-            <p className={shared.cardBody}>
-              A fully-featured Android AI chat app. Run GGUF models locally
-              via llama.cpp, or connect to Ollama, OpenAI, Anthropic, and more.
-            </p>
-            <span className={styles.cardLink}>Learn more →</span>
-          </Link>
-          <Link href="/maise" className={styles.projectCard}>
-            <h3 className={shared.cardTitle}>Maise</h3>
-            <p className={shared.cardBody}>
-              An on-device Android text-to-speech engine with 40+ voices across
-              9 languages, powered by ONNX Runtime. No internet required.
-            </p>
-            <span className={styles.cardLink}>Learn more →</span>
-          </Link>
-          <Link href="/babylon" className={styles.projectCard}>
-            <h3 className={shared.cardTitle}>Babylon.cpp</h3>
-            <p className={shared.cardBody}>
-              A cross-platform C/C++ library for local G2P and neural TTS.
-              Kokoro (54+ voices), VITS/Piper, REST API, and Python bindings.
-            </p>
-            <span className={styles.cardLink}>Learn more →</span>
           </Link>
         </div>
       </section>
