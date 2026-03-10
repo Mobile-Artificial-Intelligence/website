@@ -37,7 +37,6 @@ export default function Home() {
       </section>
 
       <section className={shared.section}>
-        <h2 className={shared.sectionTitle}>Our Projects</h2>
         <Link href="/maid" className={styles.maidCard}>
           <div className={styles.maidImageWrapper}>
             <Image
