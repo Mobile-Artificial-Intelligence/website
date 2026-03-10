@@ -36,16 +36,8 @@
 /* Maid image card */
 .maidCard {
   display: block;
-  border: 1px solid rgba(0, 225, 255, 0.2);
-  border-radius: 8px;
   text-decoration: none;
   color: inherit;
-  overflow: hidden;
-  transition: border-color 0.2s ease;
-}
-
-.maidCard:hover {
-  border-color: #00b7ff;
 }
 
 .maidImageWrapper {
@@ -53,11 +45,13 @@
   width: 100%;
   aspect-ratio: 16 / 7;
   overflow: hidden;
+  border-radius: 8px;
 }
 
 .maidImage {
   object-fit: cover;
-  object-position: center 20%;
+  object-position: center center;
+  border-radius: 8px;
   transition: transform 0.3s ease;
 }
 
@@ -66,7 +60,7 @@
 }
 
 .maidCardContent {
-  padding: 1.25rem;
+  padding: 1rem 0.25rem 0;
 }
 
 .maidCardTitle {
@@ -86,15 +80,8 @@
 .projectCard {
   display: block;
   padding: 1.25rem;
-  border: 1px solid rgba(0, 225, 255, 0.2);
-  border-radius: 8px;
   text-decoration: none;
   color: inherit;
-  transition: border-color 0.2s ease;
-}
-
-.projectCard:hover {
-  border-color: #00b7ff;
 }
 
 .cardLink {

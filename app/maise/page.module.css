@@ -2,15 +2,8 @@
 .projectCard {
   display: block;
   padding: 1.25rem;
-  border: 1px solid rgba(0, 225, 255, 0.2);
-  border-radius: 8px;
   text-decoration: none;
   color: inherit;
-  transition: border-color 0.2s ease;
-}
-
-.projectCard:hover {
-  border-color: #00b7ff;
 }
 
 .cardLink {
