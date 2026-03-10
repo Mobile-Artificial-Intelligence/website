@@ -65,7 +65,20 @@ export default function Home() {
             <p className={shared.cardBody}>40+ Kokoro voices, 9 languages, Whisper ASR — all running locally via ONNX Runtime. No internet required.</p>
           </div>
         </Link>
-        <GuideCard href="/babylon" title="Babylon.cpp" description="A cross-platform C/C++ library for local G2P and neural TTS. Kokoro (54+ voices), VITS/Piper, REST API, and Python bindings." linkText="Learn more →" />
+        <Link href="/babylon" className={styles.imageCard}>
+          <div className={styles.imageWrapper}>
+            <Image
+              src="/images/babylon-graphic.png"
+              alt="Babylon.cpp TTS Library"
+              fill
+              className={styles.image}
+            />
+          </div>
+          <div className={styles.imageContent}>
+            <h3 className={styles.imageTitle}>Local G2P and Neural TTS Library</h3>
+            <p className={shared.cardBody}>A cross-platform C/C++ library for local G2P and neural TTS. Kokoro (54+ voices), VITS/Piper, REST API, and Python bindings.</p>
+          </div>
+        </Link>
       </section>
 
       <section className={shared.section}>
