@@ -2,6 +2,9 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import styles from "./page.module.css";
 import shared from "@/app/shared.module.css";
+import Hero from "@/components/Hero";
+import Card from "@/components/Card";
+import GuideCard from "@/components/GuideCard";
 
 export const metadata: Metadata = {
   title: "Babylon.cpp — Local G2P and Neural TTS Library | Mobile Artificial Intelligence",
@@ -78,37 +81,29 @@ const platforms = [
 export default function BabylonPage() {
   return (
     <main className={shared.page}>
-      <section className={shared.hero}>
-        <h1 className={shared.heroTitle}>Babylon.cpp</h1>
-        <p className={shared.tagline}>Local G2P and Neural TTS</p>
-        <p className={shared.description}>
-          A free, open-source C and C++ library for grapheme-to-phoneme conversion
-          and neural text-to-speech synthesis. Kokoro (54+ voices) and VITS/Piper
-          engines — all running locally via ONNX Runtime, zero internet required.
-        </p>
-        <div className={shared.heroCta}>
-          <Link
-            href="https://github.com/Mobile-Artificial-Intelligence/babylon.cpp"
-            className={shared.ctaButton}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View on GitHub →
-          </Link>
-          <Link href="/babylon/guides" className={shared.ctaButtonSecondary}>
-            Read the guides →
-          </Link>
-        </div>
-      </section>
+      <Hero
+        title="Babylon.cpp"
+        tagline="Local G2P and Neural TTS"
+        description="A free, open-source C and C++ library for grapheme-to-phoneme conversion and neural text-to-speech synthesis. Kokoro (54+ voices) and VITS/Piper engines — all running locally via ONNX Runtime, zero internet required."
+      >
+        <Link
+          href="https://github.com/Mobile-Artificial-Intelligence/babylon.cpp"
+          className={shared.ctaButton}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View on GitHub →
+        </Link>
+        <Link href="/babylon/guides" className={shared.ctaButtonSecondary}>
+          Read the guides →
+        </Link>
+      </Hero>
 
       <section className={shared.section}>
         <h2 className={shared.sectionTitle}>Features</h2>
         <div className={shared.grid3}>
           {features.map((f) => (
-            <div key={f.title} className={shared.card}>
-              <h3 className={shared.cardTitle}>{f.title}</h3>
-              <p className={shared.cardBody}>{f.description}</p>
-            </div>
+            <Card key={f.title} title={f.title}>{f.description}</Card>
           ))}
         </div>
       </section>
@@ -156,31 +151,11 @@ make cli`}</pre>
           Step-by-step guides for building, integrating, and using Babylon.cpp.
         </p>
         <div className={shared.grid2}>
-          <Link href="/babylon/guides/getting-started" className={styles.projectCard}>
-            <h3 className={shared.cardTitle}>Getting Started</h3>
-            <p className={shared.cardBody}>Build babylon.cpp from source, set up model files, and run your first synthesis.</p>
-            <span className={styles.cardLink}>Read guide →</span>
-          </Link>
-          <Link href="/babylon/guides/cli-usage" className={styles.projectCard}>
-            <h3 className={shared.cardTitle}>CLI Usage</h3>
-            <p className={shared.cardBody}>Use the babylon CLI to phonemize text, synthesise speech, and serve the REST API.</p>
-            <span className={styles.cardLink}>Read guide →</span>
-          </Link>
-          <Link href="/babylon/guides/rest-api" className={styles.projectCard}>
-            <h3 className={shared.cardTitle}>REST API</h3>
-            <p className={shared.cardBody}>Integrate local TTS and G2P into any app via the built-in HTTP endpoints.</p>
-            <span className={styles.cardLink}>Read guide →</span>
-          </Link>
-          <Link href="/babylon/guides/c-api" className={styles.projectCard}>
-            <h3 className={shared.cardTitle}>C / C++ API</h3>
-            <p className={shared.cardBody}>Embed babylon.cpp directly in your C or C++ project using the native library API.</p>
-            <span className={styles.cardLink}>Read guide →</span>
-          </Link>
-          <Link href="/babylon/guides/python" className={styles.projectCard}>
-            <h3 className={shared.cardTitle}>Python Wrapper</h3>
-            <p className={shared.cardBody}>Use the pre-built Python package for G2P and TTS without compiling anything.</p>
-            <span className={styles.cardLink}>Read guide →</span>
-          </Link>
+          <GuideCard href="/babylon/guides/getting-started" title="Getting Started" description="Build babylon.cpp from source, set up model files, and run your first synthesis." linkText="Read guide →" />
+          <GuideCard href="/babylon/guides/cli-usage" title="CLI Usage" description="Use the babylon CLI to phonemize text, synthesise speech, and serve the REST API." linkText="Read guide →" />
+          <GuideCard href="/babylon/guides/rest-api" title="REST API" description="Integrate local TTS and G2P into any app via the built-in HTTP endpoints." linkText="Read guide →" />
+          <GuideCard href="/babylon/guides/c-api" title="C / C++ API" description="Embed babylon.cpp directly in your C or C++ project using the native library API." linkText="Read guide →" />
+          <GuideCard href="/babylon/guides/python" title="Python Wrapper" description="Use the pre-built Python package for G2P and TTS without compiling anything." linkText="Read guide →" />
         </div>
         <div style={{ marginTop: "4rem" }}>
           <Link href="/babylon/guides" className={shared.ctaButtonSecondary}>View all guides →</Link>

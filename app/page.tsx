@@ -3,6 +3,8 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import styles from "@/app/page.module.css";
 import shared from "@/app/shared.module.css";
+import Card from "@/components/Card";
+import GuideCard from "@/components/GuideCard";
 
 export const metadata: Metadata = {
   title: "Mobile Artificial Intelligence | Run AI on the Edge",
@@ -51,22 +53,8 @@ export default function Home() {
           </div>
         </Link>
         <div className={shared.grid2} style={{ marginTop: "1.5rem" }}>
-          <Link href="/maise" className={styles.projectCard}>
-            <h3 className={shared.cardTitle}>Maise</h3>
-            <p className={shared.cardBody}>
-              An on-device Android text-to-speech engine with 40+ voices across
-              9 languages, powered by ONNX Runtime. No internet required.
-            </p>
-            <span className={styles.cardLink}>Learn more →</span>
-          </Link>
-          <Link href="/babylon" className={styles.projectCard}>
-            <h3 className={shared.cardTitle}>Babylon.cpp</h3>
-            <p className={shared.cardBody}>
-              A cross-platform C/C++ library for local G2P and neural TTS.
-              Kokoro (54+ voices), VITS/Piper, REST API, and Python bindings.
-            </p>
-            <span className={styles.cardLink}>Learn more →</span>
-          </Link>
+          <GuideCard href="/maise" title="Maise" description="An on-device Android text-to-speech engine with 40+ voices across 9 languages, powered by ONNX Runtime. No internet required." linkText="Learn more →" />
+          <GuideCard href="/babylon" title="Babylon.cpp" description="A cross-platform C/C++ library for local G2P and neural TTS. Kokoro (54+ voices), VITS/Piper, REST API, and Python bindings." linkText="Learn more →" />
         </div>
       </section>
 
@@ -79,44 +67,19 @@ export default function Home() {
           entirely yours — no subscription, no server, no compromise.
         </p>
         <div className={shared.grid3}>
-          <div className={shared.card}>
-            <h3 className={shared.cardTitle}>Private</h3>
-            <p className={shared.cardBody}>Your data never leaves your device. No telemetry, no ads, no tracking.</p>
-          </div>
-          <div className={shared.card}>
-            <h3 className={shared.cardTitle}>Offline</h3>
-            <p className={shared.cardBody}>Works anywhere — on a plane, in the bush, wherever you are.</p>
-          </div>
-          <div className={shared.card}>
-            <h3 className={shared.cardTitle}>Open Source</h3>
-            <p className={shared.cardBody}>MIT licensed. Inspect the code, fork it, contribute to it.</p>
-          </div>
+          <Card title="Private">Your data never leaves your device. No telemetry, no ads, no tracking.</Card>
+          <Card title="Offline">Works anywhere — on a plane, in the bush, wherever you are.</Card>
+          <Card title="Open Source">MIT licensed. Inspect the code, fork it, contribute to it.</Card>
         </div>
       </section>
 
       <section className={shared.section}>
         <h2 className={shared.sectionTitle}>Guides</h2>
         <div className={shared.grid2}>
-          <Link href="/maid/guides/llama-cpp" className={styles.projectCard}>
-            <h3 className={shared.cardTitle}>Run AI Locally on Android</h3>
-            <p className={shared.cardBody}>Run GGUF models entirely on your phone using Maid and llama.cpp — no internet, no API key.</p>
-            <span className={styles.cardLink}>Read guide →</span>
-          </Link>
-          <Link href="/maid/guides/ollama" className={styles.projectCard}>
-            <h3 className={shared.cardTitle}>Connect to Ollama</h3>
-            <p className={shared.cardBody}>Run large models on your desktop and use Maid on your phone as the chat interface.</p>
-            <span className={styles.cardLink}>Read guide →</span>
-          </Link>
-          <Link href="/maise/guides/tts-setup" className={styles.projectCard}>
-            <h3 className={shared.cardTitle}>Set Up On-Device TTS</h3>
-            <p className={shared.cardBody}>Make Maise the default voice engine for your entire Android device in a few taps.</p>
-            <span className={styles.cardLink}>Read guide →</span>
-          </Link>
-          <Link href="/maise/guides/maid-integration" className={styles.projectCard}>
-            <h3 className={shared.cardTitle}>Fully Offline AI Voice</h3>
-            <p className={shared.cardBody}>Combine Maid and Maise for local inference, local voice, and local transcription — end to end.</p>
-            <span className={styles.cardLink}>Read guide →</span>
-          </Link>
+          <GuideCard href="/maid/guides/llama-cpp" title="Run AI Locally on Android" description="Run GGUF models entirely on your phone using Maid and llama.cpp — no internet, no API key." linkText="Read guide →" />
+          <GuideCard href="/maid/guides/ollama" title="Connect to Ollama" description="Run large models on your desktop and use Maid on your phone as the chat interface." linkText="Read guide →" />
+          <GuideCard href="/maise/guides/tts-setup" title="Set Up On-Device TTS" description="Make Maise the default voice engine for your entire Android device in a few taps." linkText="Read guide →" />
+          <GuideCard href="/maise/guides/maid-integration" title="Fully Offline AI Voice" description="Combine Maid and Maise for local inference, local voice, and local transcription — end to end." linkText="Read guide →" />
         </div>
       </section>
     </main>

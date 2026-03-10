@@ -3,6 +3,9 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import styles from "./page.module.css";
 import shared from "@/app/shared.module.css";
+import Hero from "@/components/Hero";
+import Card from "@/components/Card";
+import GuideCard from "@/components/GuideCard";
 
 export const metadata: Metadata = {
   title: "Maise — On-Device Speech for Android | Mobile Artificial Intelligence",
@@ -73,52 +76,44 @@ const languages = [
 export default function MaisePage() {
   return (
     <main className={shared.page}>
-      <section className={shared.hero}>
-        <h1 className={shared.heroTitle}>Maise</h1>
-        <p className={shared.tagline}>On-Device Speech for Android</p>
-        <p className={shared.description}>
-          A free, open-source Android speech engine with on-device TTS and ASR.
-          40+ voices, 9 languages, Whisper transcription — zero internet
-          required.
-        </p>
-        <div className={shared.heroCta}>
-          <Link
-            href="https://play.google.com/store/apps/details?id=com.danemadsen.maise"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
-              alt="Get it on Google Play"
-              width={200}
-              height={77}
-              className={styles.badge}
-            />
-          </Link>
-          <Link
-            href="https://github.com/Mobile-Artificial-Intelligence/maise/releases/latest"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src="https://raw.githubusercontent.com/NeoApplications/Neo-Backup/refs/heads/main/badge_github.png"
-              alt="Download from GitHub"
-              width={200}
-              height={77}
-              className={styles.badge}
-            />
-          </Link>
-        </div>
-      </section>
+      <Hero
+        title="Maise"
+        tagline="On-Device Speech for Android"
+        description="A free, open-source Android speech engine with on-device TTS and ASR. 40+ voices, 9 languages, Whisper transcription — zero internet required."
+      >
+        <Link
+          href="https://play.google.com/store/apps/details?id=com.danemadsen.maise"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+            alt="Get it on Google Play"
+            width={200}
+            height={77}
+            className={styles.badge}
+          />
+        </Link>
+        <Link
+          href="https://github.com/Mobile-Artificial-Intelligence/maise/releases/latest"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            src="https://raw.githubusercontent.com/NeoApplications/Neo-Backup/refs/heads/main/badge_github.png"
+            alt="Download from GitHub"
+            width={200}
+            height={77}
+            className={styles.badge}
+          />
+        </Link>
+      </Hero>
 
       <section className={shared.section}>
         <h2 className={shared.sectionTitle}>Features</h2>
         <div className={shared.grid3}>
           {features.map((f) => (
-            <div key={f.title} className={shared.card}>
-              <h3 className={shared.cardTitle}>{f.title}</h3>
-              <p className={shared.cardBody}>{f.description}</p>
-            </div>
+            <Card key={f.title} title={f.title}>{f.description}</Card>
           ))}
         </div>
       </section>
@@ -138,26 +133,10 @@ export default function MaisePage() {
           Step-by-step guides for setting up and getting the most from Maise.
         </p>
         <div className={shared.grid2}>
-          <Link href="/maise/guides/tts-setup" className={styles.projectCard}>
-            <h3 className={shared.cardTitle}>Set Up System TTS</h3>
-            <p className={shared.cardBody}>Make Maise the default voice engine for your entire Android device in a few taps.</p>
-            <span className={styles.cardLink}>Read guide →</span>
-          </Link>
-          <Link href="/maise/guides/asr-setup" className={styles.projectCard}>
-            <h3 className={shared.cardTitle}>Set Up Speech Recognition</h3>
-            <p className={shared.cardBody}>Enable offline voice dictation in any app using Whisper-powered on-device ASR.</p>
-            <span className={styles.cardLink}>Read guide →</span>
-          </Link>
-          <Link href="/maise/guides/maid-integration" className={styles.projectCard}>
-            <h3 className={shared.cardTitle}>Use Maise with Maid</h3>
-            <p className={shared.cardBody}>Combine local TTS and ASR with Maid&apos;s on-device AI for a fully offline assistant.</p>
-            <span className={styles.cardLink}>Read guide →</span>
-          </Link>
-          <Link href="/maise/guides/voices" className={styles.projectCard}>
-            <h3 className={shared.cardTitle}>Voices & Languages</h3>
-            <p className={shared.cardBody}>Browse all 68 Kokoro voices across 9 languages and learn how to preview them.</p>
-            <span className={styles.cardLink}>Read guide →</span>
-          </Link>
+          <GuideCard href="/maise/guides/tts-setup" title="Set Up System TTS" description="Make Maise the default voice engine for your entire Android device in a few taps." linkText="Read guide →" />
+          <GuideCard href="/maise/guides/asr-setup" title="Set Up Speech Recognition" description="Enable offline voice dictation in any app using Whisper-powered on-device ASR." linkText="Read guide →" />
+          <GuideCard href="/maise/guides/maid-integration" title="Use Maise with Maid" description="Combine local TTS and ASR with Maid's on-device AI for a fully offline assistant." linkText="Read guide →" />
+          <GuideCard href="/maise/guides/voices" title="Voices & Languages" description="Browse all 68 Kokoro voices across 9 languages and learn how to preview them." linkText="Read guide →" />
         </div>
         <div style={{ marginTop: "4rem" }}>
           <Link href="/maise/guides" className={shared.ctaButtonSecondary}>View all guides →</Link>

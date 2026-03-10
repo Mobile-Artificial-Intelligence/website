@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import shared from "@/app/shared.module.css";
 import styles from "./guide.module.css";
+import GuideCard from "@/components/GuideCard";
 
 export const metadata: Metadata = {
   title: "Maise Guides — Setup & Configuration | Mobile Artificial Intelligence",
@@ -68,15 +69,7 @@ export default function MaiseGuidesIndexPage() {
       <div className={styles.body}>
         <div className={shared.grid2}>
           {guides.map((g) => (
-            <Link key={g.href} href={g.href} style={{ textDecoration: "none" }}>
-              <div className={shared.card} style={{ height: "100%", cursor: "pointer", transition: "border-color 0.2s ease" }}>
-                <p style={{ fontSize: "0.7rem", color: "#00b7ff", opacity: 0.7, marginBottom: "0.5rem" }}>
-                  {g.tag}
-                </p>
-                <h2 className={shared.cardTitle} style={{ fontSize: "1rem", marginBottom: "0.6rem" }}>{g.title}</h2>
-                <p className={shared.cardBody}>{g.description}</p>
-              </div>
-            </Link>
+            <GuideCard key={g.href} href={g.href} title={g.title} description={g.description} tag={g.tag} />
           ))}
         </div>
       </div>

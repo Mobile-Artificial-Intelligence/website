@@ -3,6 +3,9 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import styles from "./page.module.css";
 import shared from "@/app/shared.module.css";
+import Hero from "@/components/Hero";
+import Card from "@/components/Card";
+import GuideCard from "@/components/GuideCard";
 
 export const metadata: Metadata = {
   title: "Maid — Local AI Chat for Android | Mobile Artificial Intelligence",
@@ -63,52 +66,44 @@ const features = [
 export default function MaidPage() {
   return (
     <main className={shared.page}>
-      <section className={shared.hero}>
-        <h1 className={shared.heroTitle}>Maid</h1>
-        <p className={shared.tagline}>Local AI Chat for Android</p>
-        <p className={shared.description}>
-          A free, open-source Android app that lets you chat with AI models
-          entirely on your device — no subscription, no cloud, no data leaving
-          your phone.
-        </p>
-        <div className={shared.heroCta}>
-          <Link
-            href="https://play.google.com/store/apps/details?id=com.danemadsen.maid"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
-              alt="Get it on Google Play"
-              width={200}
-              height={77}
-              className={styles.badge}
-            />
-          </Link>
-          <Link
-            href="https://github.com/Mobile-Artificial-Intelligence/maid/releases/latest"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src="https://raw.githubusercontent.com/NeoApplications/Neo-Backup/refs/heads/main/badge_github.png"
-              alt="Download from GitHub"
-              width={200}
-              height={77}
-              className={styles.badge}
-            />
-          </Link>
-        </div>
-      </section>
+      <Hero
+        title="Maid"
+        tagline="Local AI Chat for Android"
+        description="A free, open-source Android app that lets you chat with AI models entirely on your device — no subscription, no cloud, no data leaving your phone."
+      >
+        <Link
+          href="https://play.google.com/store/apps/details?id=com.danemadsen.maid"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+            alt="Get it on Google Play"
+            width={200}
+            height={77}
+            className={styles.badge}
+          />
+        </Link>
+        <Link
+          href="https://github.com/Mobile-Artificial-Intelligence/maid/releases/latest"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            src="https://raw.githubusercontent.com/NeoApplications/Neo-Backup/refs/heads/main/badge_github.png"
+            alt="Download from GitHub"
+            width={200}
+            height={77}
+            className={styles.badge}
+          />
+        </Link>
+      </Hero>
 
       <section className={shared.section}>
         <h2 className={shared.sectionTitle}>Features</h2>
         <div className={shared.grid3}>
           {features.map((f) => (
-            <div key={f.title} className={shared.card}>
-              <h3 className={shared.cardTitle}>{f.title}</h3>
-              <p className={shared.cardBody}>{f.description}</p>
-            </div>
+            <Card key={f.title} title={f.title}>{f.description}</Card>
           ))}
         </div>
       </section>
@@ -200,26 +195,10 @@ export default function MaidPage() {
           Step-by-step setup guides for every supported AI provider.
         </p>
         <div className={shared.grid2}>
-          <Link href="/maid/guides/llama-cpp" className={styles.projectCard}>
-            <h3 className={shared.cardTitle}>Run AI Locally with llama.cpp</h3>
-            <p className={shared.cardBody}>No internet, no API key. Run GGUF models entirely on your Android device.</p>
-            <span className={styles.cardLink}>Read guide →</span>
-          </Link>
-          <Link href="/maid/guides/ollama" className={styles.projectCard}>
-            <h3 className={shared.cardTitle}>Connect to Ollama</h3>
-            <p className={shared.cardBody}>Run a large model on your desktop and use Maid as the mobile chat interface.</p>
-            <span className={styles.cardLink}>Read guide →</span>
-          </Link>
-          <Link href="/maid/guides/openai" className={styles.projectCard}>
-            <h3 className={shared.cardTitle}>OpenAI & Compatible APIs</h3>
-            <p className={shared.cardBody}>Connect to GPT-4o or any OpenAI-compatible endpoint including LM Studio and OpenRouter.</p>
-            <span className={styles.cardLink}>Read guide →</span>
-          </Link>
-          <Link href="/maid/guides/anthropic" className={styles.projectCard}>
-            <h3 className={shared.cardTitle}>Claude via Anthropic API</h3>
-            <p className={shared.cardBody}>Access Claude Opus, Sonnet, and Haiku on Android with your own API key.</p>
-            <span className={styles.cardLink}>Read guide →</span>
-          </Link>
+          <GuideCard href="/maid/guides/llama-cpp" title="Run AI Locally with llama.cpp" description="No internet, no API key. Run GGUF models entirely on your Android device." linkText="Read guide →" />
+          <GuideCard href="/maid/guides/ollama" title="Connect to Ollama" description="Run a large model on your desktop and use Maid as the mobile chat interface." linkText="Read guide →" />
+          <GuideCard href="/maid/guides/openai" title="OpenAI & Compatible APIs" description="Connect to GPT-4o or any OpenAI-compatible endpoint including LM Studio and OpenRouter." linkText="Read guide →" />
+          <GuideCard href="/maid/guides/anthropic" title="Claude via Anthropic API" description="Access Claude Opus, Sonnet, and Haiku on Android with your own API key." linkText="Read guide →" />
         </div>
         <div style={{ marginTop: "4rem" }}>
           <Link href="/maid/guides" className={shared.ctaButtonSecondary}>View all guides →</Link>
