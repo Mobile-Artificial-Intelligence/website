@@ -65,7 +65,6 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <Script strategy="lazyOnload" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9118075995980578" crossOrigin="anonymous"></Script>
         <Script strategy="lazyOnload" src="https://quge5.com/88/tag.min.js" data-zone="225334" async data-cfasync="false"></Script>
       </head>
       <body className={`${geistSans.variable} ${spaceMono.variable}`}>
