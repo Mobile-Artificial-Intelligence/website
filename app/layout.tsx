@@ -66,6 +66,19 @@ export default function RootLayout({
       <head>
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <Script strategy="lazyOnload" src="https://quge5.com/88/tag.min.js" data-zone="225334" async data-cfasync="false"></Script>
+        <Script
+          id="monetag-script"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `(function(s){
+              s.dataset.zone='10843275';
+              s.src='https://al5sm.com/tag.min.js';
+            })([document.documentElement, document.body]
+              .filter(Boolean)
+              .pop()
+              .appendChild(document.createElement('script')));`,
+          }}
+        />
       </head>
       <body className={`${geistSans.variable} ${spaceMono.variable}`}>
         <header>
